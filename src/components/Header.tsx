@@ -6,6 +6,8 @@ const navItems = [
   { label: "O que são as gominhas", href: "#o-que-sao" },
   { label: "Benefícios", href: "#beneficios" },
   { label: "Como usar", href: "#como-usar" },
+  { label: "Nossa História", href: "#nossa-historia" },
+  { label: "Nutrição Funcional", href: "#nutricao-funcional" },
 ];
 
 const Header = () => {

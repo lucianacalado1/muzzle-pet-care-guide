@@ -11,7 +11,7 @@ const stagger = {
 };
 
 const OurStorySection = () => (
-  <section className="py-20 bg-card">
+  <section id="nossa-historia" className="py-20 bg-card">
     <div className="container">
       <motion.div
         className="max-w-5xl mx-auto"
