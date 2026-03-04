@@ -8,6 +8,8 @@ import TargetPetsSection from "@/components/landing/TargetPetsSection";
 import StorageSection from "@/components/landing/StorageSection";
 import AuthoritySection from "@/components/landing/AuthoritySection";
 import SocialProofSection from "@/components/landing/SocialProofSection";
+import OurStorySection from "@/components/landing/OurStorySection";
+import FunctionalNutritionSection from "@/components/landing/FunctionalNutritionSection";
 import FinalCTASection from "@/components/landing/FinalCTASection";
 
 const Index = () => (
@@ -21,6 +23,8 @@ const Index = () => (
     <StorageSection />
     <AuthoritySection />
     <SocialProofSection />
+    <OurStorySection />
+    <FunctionalNutritionSection />
     <FinalCTASection />
   </Layout>
 );
