@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { MessageCircle, PawPrint, RotateCcw } from "lucide-react";
+import { MessageCircle, PawPrint, RotateCcw, CheckCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { QuizData, calculateDose, goalLabels, goalBenefits } from "@/types/quiz";
@@ -25,10 +25,16 @@ const Resultado = () => {
   if (!data) return null;
 
   const whatsappMessage = encodeURIComponent(
-    `Olá! Fiz o teste da Muzzle para o meu pet ${data.petName} e recebi a recomendação de ${dose} gominhas por dia. Gostaria de fazer o pedido.`
+    `Olá! Acabei de fazer o teste da Muzzle para o meu pet ${data.petName} e recebi a recomendação de ${dose} gominhas por dia. Gostaria de fazer o pedido.`
   );
 
   const whatsappUrl = `https://wa.me/?text=${whatsappMessage}`;
+
+  const routineTips = [
+    "Ofereça diariamente",
+    "Pode ser como snack ou topping",
+    "Introduza gradualmente",
+  ];
 
   return (
     <Layout>
@@ -45,22 +51,24 @@ const Resultado = () => {
             </div>
 
             <h1 className="text-3xl font-extrabold mb-2">
-              Resultado para {data.petName} 🎉
+              Recomendação para {data.petName} 🎉
             </h1>
             <p className="text-muted-foreground mb-8">
               {data.species === "cat" ? "Gato" : "Cão"} • {data.weight}kg
               {data.breed ? ` • ${data.breed}` : ""}
             </p>
 
+            {/* Dose */}
             <div className="bg-primary/10 rounded-2xl p-6 mb-8">
               <p className="text-sm font-semibold text-primary mb-1">Dose Recomendada</p>
               <p className="text-5xl font-extrabold text-primary">{dose}</p>
               <p className="text-primary font-medium">gominhas por dia</p>
             </div>
 
+            {/* Benefícios esperados */}
             {data.goals.length > 0 && !data.goals.includes("none") && (
               <div className="text-left space-y-4 mb-8">
-                <h3 className="font-bold text-lg">Benefícios para {data.petName}:</h3>
+                <h3 className="font-bold text-lg">Benefícios esperados:</h3>
                 {data.goals.map((g) => (
                   <div key={g} className="flex gap-3 items-start">
                     <div className="w-2 h-2 rounded-full bg-accent mt-2 shrink-0" />
@@ -78,6 +86,19 @@ const Resultado = () => {
                 <p className="text-sm text-muted-foreground">{goalBenefits.none}</p>
               </div>
             )}
+
+            {/* Como incluir na rotina */}
+            <div className="text-left mb-8">
+              <h3 className="font-bold text-lg mb-3">Como incluir na rotina:</h3>
+              <div className="space-y-2">
+                {routineTips.map((tip) => (
+                  <div key={tip} className="flex gap-2 items-center">
+                    <CheckCircle className="w-4 h-4 text-accent shrink-0" />
+                    <p className="text-sm text-muted-foreground">{tip}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
             <a
               href={whatsappUrl}

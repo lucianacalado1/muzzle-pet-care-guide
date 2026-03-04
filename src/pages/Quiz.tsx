@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Dog, Cat, ArrowRight, ArrowLeft, PawPrint } from "lucide-react";
+import { Dog, Cat, ArrowRight, ArrowLeft, PawPrint, Mail } from "lucide-react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,6 +22,7 @@ const Quiz = () => {
     species: "",
     age: "",
     breed: "",
+    size: "",
     weight: "",
     sex: "",
     goals: [],
@@ -37,18 +38,22 @@ const Quiz = () => {
   };
 
   const toggleGoal = (goal: string) => {
+    if (goal === "none") {
+      setData((prev) => ({ ...prev, goals: ["none"] }));
+      return;
+    }
     setData((prev) => ({
       ...prev,
       goals: prev.goals.includes(goal)
         ? prev.goals.filter((g) => g !== goal)
-        : [...prev.goals, goal],
+        : [...prev.goals.filter((g) => g !== "none"), goal],
     }));
   };
 
   const canNext = () => {
     switch (step) {
       case 0:
-        return data.petName && data.species && data.weight;
+        return data.petName && data.species && data.weight && data.size;
       case 1:
         return data.goals.length > 0;
       case 2:
@@ -66,24 +71,36 @@ const Quiz = () => {
   };
 
   const goals = [
-    { id: "skin", label: "Pele e Pelo", emoji: "✨" },
-    { id: "joints", label: "Articulações", emoji: "🦴" },
-    { id: "mobility", label: "Mobilidade", emoji: "🏃" },
-    { id: "digestion", label: "Digestão", emoji: "💧" },
-    { id: "none", label: "Sem preocupação específica", emoji: "😊" },
+    { id: "none", label: "Não tenho nenhuma preocupação especial", emoji: "😊" },
+    { id: "allergies", label: "Alergias ou pele sensível", emoji: "🩹" },
+    { id: "coat", label: "Pelo mais forte e brilhante", emoji: "✨" },
+    { id: "joints", label: "Displasia ou problemas articulares", emoji: "🦴" },
+    { id: "weight", label: "Controle ou perda de peso", emoji: "⚖️" },
+    { id: "mobility", label: "Maior mobilidade", emoji: "🏃" },
   ];
 
   const diets = [
-    { id: "kibble", label: "Ração", emoji: "🥣" },
-    { id: "natural", label: "Alimentação Natural", emoji: "🥩" },
-    { id: "supplement", label: "Suplementação", emoji: "💊" },
+    { id: "kibble", label: "Ração seca", emoji: "🥣" },
+    { id: "natural", label: "Alimentação natural", emoji: "🥩" },
+    { id: "supplement", label: "Alimentação suplementada", emoji: "💊" },
+  ];
+
+  const sizes = [
+    { id: "small" as const, label: "Pequeno" },
+    { id: "medium" as const, label: "Médio" },
+    { id: "large" as const, label: "Grande" },
   ];
 
   return (
     <Layout>
       <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-10">
         <div className="w-full max-w-lg mx-auto px-4">
-          <div className="mb-8">
+          <div className="text-center mb-6">
+            <h1 className="text-2xl md:text-3xl font-extrabold mb-1">Descubra a dose ideal para o seu pet</h1>
+            <p className="text-muted-foreground text-sm">Leva menos de 1 minuto</p>
+          </div>
+
+          <div className="mb-6">
             <div className="flex items-center justify-between text-sm text-muted-foreground mb-2">
               <span>Etapa {step + 1} de {totalSteps}</span>
               <span>{Math.round(progress)}%</span>
@@ -91,7 +108,7 @@ const Quiz = () => {
             <Progress value={progress} className="h-2" />
           </div>
 
-          <div className="bg-card rounded-3xl p-8 shadow-lg border border-border min-h-[400px] flex flex-col">
+          <div className="bg-card rounded-3xl p-8 shadow-lg border border-border min-h-[420px] flex flex-col">
             <AnimatePresence mode="wait">
               <motion.div
                 key={step}
@@ -104,30 +121,20 @@ const Quiz = () => {
               >
                 {step === 0 && (
                   <div className="space-y-5">
-                    <h2 className="text-2xl font-bold">Sobre o seu Pet 🐾</h2>
+                    <h2 className="text-2xl font-bold">Informações do Pet 🐾</h2>
                     <div>
                       <label className="text-sm font-semibold mb-1.5 block">Nome do pet</label>
-                      <Input
-                        placeholder="Ex: Luna"
-                        value={data.petName}
-                        onChange={(e) => update("petName", e.target.value)}
-                        className="rounded-xl"
-                      />
+                      <Input placeholder="Ex: Luna" value={data.petName} onChange={(e) => update("petName", e.target.value)} className="rounded-xl" />
                     </div>
                     <div>
                       <label className="text-sm font-semibold mb-1.5 block">Espécie</label>
                       <div className="grid grid-cols-2 gap-3">
-                        {[
-                          { id: "dog" as const, label: "Cão", icon: Dog },
-                          { id: "cat" as const, label: "Gato", icon: Cat },
-                        ].map((s) => (
+                        {([{ id: "dog" as const, label: "Cão", icon: Dog }, { id: "cat" as const, label: "Gato", icon: Cat }]).map((s) => (
                           <button
                             key={s.id}
                             onClick={() => update("species", s.id)}
                             className={`flex items-center justify-center gap-2 p-4 rounded-xl border-2 transition-all font-semibold ${
-                              data.species === s.id
-                                ? "border-primary bg-primary/10 text-primary"
-                                : "border-border hover:border-primary/30"
+                              data.species === s.id ? "border-primary bg-primary/10 text-primary" : "border-border hover:border-primary/30"
                             }`}
                           >
                             <s.icon className="w-6 h-6" />
@@ -142,29 +149,40 @@ const Quiz = () => {
                         <Input placeholder="Ex: 3 anos" value={data.age} onChange={(e) => update("age", e.target.value)} className="rounded-xl" />
                       </div>
                       <div>
-                        <label className="text-sm font-semibold mb-1.5 block">Peso (kg)</label>
-                        <Input placeholder="Ex: 12" type="number" value={data.weight} onChange={(e) => update("weight", e.target.value)} className="rounded-xl" />
+                        <label className="text-sm font-semibold mb-1.5 block">Raça</label>
+                        <Input placeholder="Ex: Labrador" value={data.breed} onChange={(e) => update("breed", e.target.value)} className="rounded-xl" />
+                      </div>
+                    </div>
+                    <div>
+                      <label className="text-sm font-semibold mb-1.5 block">Porte</label>
+                      <div className="grid grid-cols-3 gap-3">
+                        {sizes.map((s) => (
+                          <button
+                            key={s.id}
+                            onClick={() => update("size", s.id)}
+                            className={`p-3 rounded-xl border-2 text-sm font-semibold transition-all ${
+                              data.size === s.id ? "border-primary bg-primary/10 text-primary" : "border-border hover:border-primary/30"
+                            }`}
+                          >
+                            {s.label}
+                          </button>
+                        ))}
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-3">
                       <div>
-                        <label className="text-sm font-semibold mb-1.5 block">Raça</label>
-                        <Input placeholder="Ex: Labrador" value={data.breed} onChange={(e) => update("breed", e.target.value)} className="rounded-xl" />
+                        <label className="text-sm font-semibold mb-1.5 block">Peso (kg)</label>
+                        <Input placeholder="Ex: 12" type="number" value={data.weight} onChange={(e) => update("weight", e.target.value)} className="rounded-xl" />
                       </div>
                       <div>
                         <label className="text-sm font-semibold mb-1.5 block">Sexo</label>
                         <div className="grid grid-cols-2 gap-2">
-                          {[
-                            { id: "male" as const, label: "♂ Macho" },
-                            { id: "female" as const, label: "♀ Fêmea" },
-                          ].map((s) => (
+                          {([{ id: "male" as const, label: "Macho" }, { id: "female" as const, label: "Fêmea" }]).map((s) => (
                             <button
                               key={s.id}
                               onClick={() => update("sex", s.id)}
                               className={`p-2.5 rounded-xl border-2 text-sm font-semibold transition-all ${
-                                data.sex === s.id
-                                  ? "border-primary bg-primary/10 text-primary"
-                                  : "border-border hover:border-primary/30"
+                                data.sex === s.id ? "border-primary bg-primary/10 text-primary" : "border-border hover:border-primary/30"
                               }`}
                             >
                               {s.label}
@@ -178,17 +196,15 @@ const Quiz = () => {
 
                 {step === 1 && (
                   <div className="space-y-5">
-                    <h2 className="text-2xl font-bold">Qual o objetivo? 🎯</h2>
-                    <p className="text-muted-foreground text-sm">Selecione um ou mais objetivos de saúde.</p>
+                    <h2 className="text-2xl font-bold">Objetivo do tutor 🎯</h2>
+                    <p className="text-muted-foreground text-sm">O que você gostaria de melhorar no seu pet?</p>
                     <div className="space-y-3">
                       {goals.map((g) => (
                         <button
                           key={g.id}
                           onClick={() => toggleGoal(g.id)}
                           className={`w-full flex items-center gap-3 p-4 rounded-xl border-2 transition-all text-left font-medium ${
-                            data.goals.includes(g.id)
-                              ? "border-primary bg-primary/10 text-primary"
-                              : "border-border hover:border-primary/30"
+                            data.goals.includes(g.id) ? "border-primary bg-primary/10 text-primary" : "border-border hover:border-primary/30"
                           }`}
                         >
                           <span className="text-xl">{g.emoji}</span>
@@ -202,16 +218,14 @@ const Quiz = () => {
                 {step === 2 && (
                   <div className="space-y-5">
                     <h2 className="text-2xl font-bold">Alimentação Atual 🍽️</h2>
-                    <p className="text-muted-foreground text-sm">Como o seu pet se alimenta hoje?</p>
+                    <p className="text-muted-foreground text-sm">Como seu pet se alimenta hoje?</p>
                     <div className="space-y-3">
                       {diets.map((d) => (
                         <button
                           key={d.id}
                           onClick={() => update("diet", d.id)}
                           className={`w-full flex items-center gap-3 p-4 rounded-xl border-2 transition-all text-left font-medium ${
-                            data.diet === d.id
-                              ? "border-primary bg-primary/10 text-primary"
-                              : "border-border hover:border-primary/30"
+                            data.diet === d.id ? "border-primary bg-primary/10 text-primary" : "border-border hover:border-primary/30"
                           }`}
                         >
                           <span className="text-xl">{d.emoji}</span>
@@ -224,9 +238,12 @@ const Quiz = () => {
 
                 {step === 3 && (
                   <div className="space-y-5">
-                    <h2 className="text-2xl font-bold">Quase lá! 📧</h2>
-                    <p className="text-muted-foreground text-sm">
-                      Informe seu email para receber o resultado personalizado.
+                    <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto">
+                      <Mail className="w-8 h-8 text-accent" />
+                    </div>
+                    <h2 className="text-2xl font-bold text-center">Receba a recomendação ideal para o seu pet</h2>
+                    <p className="text-muted-foreground text-sm text-center">
+                      Descubra quantas gominhas oferecer por dia e receba dicas de nutrição funcional para pets.
                     </p>
                     <Input
                       type="email"
@@ -254,7 +271,7 @@ const Quiz = () => {
                 </Button>
               ) : (
                 <Button onClick={handleSubmit} disabled={!canNext()} className="gap-1 rounded-full px-6">
-                  <PawPrint className="w-4 h-4" /> Ver Resultado
+                  <PawPrint className="w-4 h-4" /> Ver recomendação
                 </Button>
               )}
             </div>
