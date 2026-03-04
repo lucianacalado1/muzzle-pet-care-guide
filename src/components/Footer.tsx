@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <img src="/logo-muzzle.jpg" alt="Muzzle Pet Food" className="h-12 rounded-md mb-3 mx-auto md:mx-0" />
+            <img src="/logo-muzzle.jpg" alt="Muzzle Pet Food" className="h-12 rounded-md mb-3 mx-auto md:mx-0 mix-blend-screen" />
             <p className="text-sm opacity-80">Suplementação funcional natural para o seu pet.</p>
           </div>
           <div className="flex gap-6 text-sm opacity-80">
