@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { PawPrint } from "lucide-react";
+import muzzlePackage from "@/assets/muzzle-package-nobg.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -45,17 +46,41 @@ const HeroSection = () => (
           </motion.div>
         </motion.div>
 
-        {/* Product Image */}
+        {/* Triple Product Image */}
         <motion.div
-          className="flex-1 flex justify-center"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
+          className="flex-1 flex items-end justify-center gap-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.3 }}
         >
-          <img
-            src="/product-1.jpeg"
-            alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
-            className="w-72 md:w-96 rounded-2xl shadow-2xl object-cover"
+          {/* Left smaller */}
+          <motion.img
+            src={muzzlePackage}
+            alt="Muzzle Pet Food"
+            className="w-24 md:w-36 object-contain drop-shadow-xl -mr-4 md:-mr-6 opacity-80"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 0.8, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            style={{ transform: "rotate(-6deg)" }}
+          />
+          {/* Center larger */}
+          <motion.img
+            src={muzzlePackage}
+            alt="Muzzle Pet Food - Snack Funcional à base de Caldo de Ossos"
+            className="w-44 md:w-64 object-contain drop-shadow-2xl z-10 relative"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          />
+          {/* Right smaller */}
+          <motion.img
+            src={muzzlePackage}
+            alt="Muzzle Pet Food"
+            className="w-24 md:w-36 object-contain drop-shadow-xl -ml-4 md:-ml-6 opacity-80"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 0.8, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            style={{ transform: "rotate(6deg)" }}
           />
         </motion.div>
       </div>
