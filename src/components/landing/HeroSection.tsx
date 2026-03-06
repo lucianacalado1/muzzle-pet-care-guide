@@ -56,7 +56,7 @@ const HeroSection = () => (
           <img
             src={productHero}
             alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
-            className="w-72 md:w-96 object-contain drop-shadow-2xl"
+            className="w-72 md:w-96 object-contain drop-shadow-2xl mix-blend-multiply"
           />
         </motion.div>
       </div>
