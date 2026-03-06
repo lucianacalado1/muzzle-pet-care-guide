@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { PawPrint } from "lucide-react";
+import productHero from "@/assets/product-hero.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -53,7 +54,7 @@ const HeroSection = () => (
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           <img
-            src="/product-1.jpeg"
+            src={productHero}
             alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
             className="w-72 md:w-96 rounded-2xl shadow-2xl object-cover"
           />
