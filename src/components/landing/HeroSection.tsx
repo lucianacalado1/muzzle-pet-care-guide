@@ -23,6 +23,9 @@ const HeroSection = () => (
           animate="visible"
           variants={stagger}
         >
+          <motion.div variants={fadeUp} className="inline-flex items-center gap-2 bg-[hsl(39,50%,92%)] text-[hsl(150,30%,25%)] px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+            <PawPrint className="w-4 h-4" /> Receita desenvolvida com orientação veterinária
+          </motion.div>
           <motion.div variants={fadeUp} className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
             <PawPrint className="w-4 h-4" /> 100% Natural
           </motion.div>
