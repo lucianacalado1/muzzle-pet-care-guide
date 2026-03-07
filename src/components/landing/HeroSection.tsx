@@ -24,11 +24,11 @@ const HeroSection = () => (
           variants={stagger}
         >
           <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3 mb-6 justify-center md:justify-start">
-            <span className="inline-flex items-center gap-2 bg-[hsl(39,50%,92%)] text-[hsl(150,30%,25%)] px-4 py-1.5 rounded-full text-sm font-medium">
-              <PawPrint className="w-4 h-4" /> Receita desenvolvida com orientação veterinária
-            </span>
             <span className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground px-4 py-1.5 rounded-full text-sm font-semibold">
               <PawPrint className="w-4 h-4" /> 100% Natural
+            </span>
+            <span className="inline-flex items-center gap-2 bg-[hsl(39,50%,92%)] text-[hsl(150,30%,25%)] px-4 py-1.5 rounded-full text-sm font-medium">
+              <PawPrint className="w-4 h-4" /> Receita desenvolvida com orientação veterinária
             </span>
           </motion.div>
           <motion.h1 variants={fadeUp} className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
