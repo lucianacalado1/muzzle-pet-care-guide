@@ -23,13 +23,18 @@ const FinalCTASection = () => (
         <p className="text-primary-foreground/80 mb-8">
           Responda algumas perguntas rápidas e receba uma recomendação personalizada.
         </p>
-        <Link
-          to="/quiz"
-          className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-full text-lg font-bold hover:opacity-90 transition-opacity shadow-lg"
-        >
-          <PawPrint className="w-5 h-5" />
-          Descobrir a dose ideal
-        </Link>
+        <div className="flex flex-col items-center gap-4">
+          <Link
+            to="/quiz"
+            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-full text-lg font-bold hover:opacity-90 transition-opacity shadow-lg"
+          >
+            <PawPrint className="w-5 h-5" />
+            Descobrir a dose ideal
+          </Link>
+          <p className="text-sm text-primary-foreground/60">
+            Leva menos de 30 segundos para descobrir a dose ideal para o seu pet.
+          </p>
+        </div>
       </motion.div>
     </div>
   </section>
