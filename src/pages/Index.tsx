@@ -3,6 +3,7 @@ import HeroSection from "@/components/landing/HeroSection";
 import ProblemSection from "@/components/landing/ProblemSection";
 import ProductSection from "@/components/landing/ProductSection";
 import BenefitsSection from "@/components/landing/BenefitsSection";
+import VeterinarySection from "@/components/landing/VeterinarySection";
 import HowToUseSection from "@/components/landing/HowToUseSection";
 import TargetPetsSection from "@/components/landing/TargetPetsSection";
 import StorageSection from "@/components/landing/StorageSection";
@@ -18,6 +19,7 @@ const Index = () => (
     <ProblemSection />
     <ProductSection />
     <BenefitsSection />
+    <VeterinarySection />
     <HowToUseSection />
     <TargetPetsSection />
     <StorageSection />
