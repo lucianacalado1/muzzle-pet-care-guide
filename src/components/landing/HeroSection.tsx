@@ -16,7 +16,7 @@ const HeroSection = () => (
   <section className="relative overflow-hidden pt-10 md:pt-0 lg:pt-0 pb-20 md:pb-32">
     <div className="container">
       <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-        {/* Text */}
+        {/* Text + CTA (desktop: all together, mobile: split around image) */}
         <motion.div
           className="flex-1 text-center md:text-left"
           initial="hidden"
@@ -40,6 +40,21 @@ const HeroSection = () => (
           <motion.p variants={fadeUp} className="text-base text-muted-foreground mb-8 max-w-lg md:mx-0 mx-auto">
             Suplementação natural para melhorar pele, pelagem e mobilidade do seu pet.
           </motion.p>
+
+          {/* Product Image - mobile only (before CTA) */}
+          <motion.div
+            className="flex md:hidden justify-center mb-8"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+          >
+            <img
+              src={productHero}
+              alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
+              className="w-[480px] object-contain drop-shadow-2xl mix-blend-multiply"
+            />
+          </motion.div>
+
           <motion.div variants={fadeUp}>
             <Link
               to="/quiz"
@@ -51,9 +66,9 @@ const HeroSection = () => (
           </motion.div>
         </motion.div>
 
-        {/* Product Image */}
+        {/* Product Image - desktop only */}
         <motion.div
-          className="flex-1 flex justify-center"
+          className="hidden md:flex flex-1 justify-center"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.3 }}
@@ -61,7 +76,7 @@ const HeroSection = () => (
           <img
             src={productHero}
             alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
-            className="w-[480px] md:w-[600px] object-contain drop-shadow-2xl mix-blend-multiply"
+            className="w-[600px] object-contain drop-shadow-2xl mix-blend-multiply"
           />
         </motion.div>
       </div>
