@@ -13,7 +13,7 @@ const stagger = {
 };
 
 const HeroSection = () => (
-  <section className="relative overflow-hidden pt-6 md:pt-8 pb-20 md:pb-32">
+  <section className="relative overflow-hidden pt-2 md:pt-4 pb-20 md:pb-32">
     <div className="container">
       <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
         {/* Text */}
