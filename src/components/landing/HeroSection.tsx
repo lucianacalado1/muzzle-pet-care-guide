@@ -23,7 +23,7 @@ const HeroSection = () => (
           animate="visible"
           variants={stagger}
         >
-          <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3 mb-6 justify-center md:justify-start">
+          <motion.div variants={fadeUp} className="flex flex-nowrap items-center gap-3 mb-6 justify-center md:justify-start overflow-x-auto">
             <span className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground px-4 py-1.5 rounded-full text-sm font-semibold">
               <PawPrint className="w-4 h-4" /> 100% Natural
             </span>
