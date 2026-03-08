@@ -22,7 +22,7 @@ const Index = () => (
     <BenefitsSection />
     <VeterinarySection />
     <HowToUseSection />
-    <TargetPetsSection />
+    
     <StorageSection />
     <AuthoritySection />
     <SocialProofSection />
