@@ -11,6 +11,7 @@ import AuthoritySection from "@/components/landing/AuthoritySection";
 import SocialProofSection from "@/components/landing/SocialProofSection";
 import OurStorySection from "@/components/landing/OurStorySection";
 import FunctionalNutritionSection from "@/components/landing/FunctionalNutritionSection";
+import FAQSection from "@/components/landing/FAQSection";
 import FinalCTASection from "@/components/landing/FinalCTASection";
 
 const Index = () => (
@@ -27,6 +28,7 @@ const Index = () => (
     <SocialProofSection />
     <OurStorySection />
     <FunctionalNutritionSection />
+    <FAQSection />
     <FinalCTASection />
   </Layout>
 );
