@@ -13,7 +13,7 @@ const stagger = {
 };
 
 const HeroSection = () => (
-  <section className="relative overflow-hidden py-20 md:py-32">
+  <section className="relative overflow-hidden pt-8 md:pt-16 pb-20 md:pb-32">
     <div className="container">
       <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
         {/* Text */}
@@ -61,7 +61,7 @@ const HeroSection = () => (
           <img
             src={productHero}
             alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
-            className="w-72 md:w-96 object-contain drop-shadow-2xl mix-blend-multiply"
+            className="w-96 md:w-[480px] object-contain drop-shadow-2xl mix-blend-multiply"
           />
         </motion.div>
       </div>
