@@ -7,7 +7,7 @@ const fadeUp = {
 };
 
 const AuthoritySection = () => (
-  <section className="py-20 bg-card">
+  <section className="py-14 md:py-20 bg-card">
     <div className="container">
       <motion.div
         className="max-w-2xl mx-auto text-center"

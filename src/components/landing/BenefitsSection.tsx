@@ -19,7 +19,7 @@ const benefits = [
 ];
 
 const BenefitsSection = () => (
-  <section id="beneficios" className="py-20 bg-card">
+  <section id="beneficios" className="py-14 md:py-20 bg-card">
     <div className="container">
       <motion.h2
         className="text-3xl md:text-4xl font-bold text-center mb-12"

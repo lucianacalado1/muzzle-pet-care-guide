@@ -13,7 +13,7 @@ const stagger = {
 };
 
 const HeroSection = () => (
-  <section className="relative overflow-hidden pt-10 md:pt-0 lg:pt-0 pb-20 md:pb-32">
+  <section className="relative overflow-hidden py-14 md:py-20">
     <div className="container">
       <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
         {/* Text + CTA (desktop: all together, mobile: split around image) */}
