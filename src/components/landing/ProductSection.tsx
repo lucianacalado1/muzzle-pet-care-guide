@@ -24,12 +24,8 @@ const ProductSection = () => (
           O que são as gominhas Muzzle
         </motion.h2>
         <motion.p variants={fadeUp} className="text-lg text-muted-foreground text-center mb-6 leading-relaxed">
-          Snacks naturais em formato de gelatina feitos a partir de caldo de ossos concentrado. Uma forma simples de complementar a alimentação com colágeno e nutrientes importantes.
+          Snacks naturais em formato de gelatina feitos a partir de caldo de ossos concentrado. Uma forma simples e prática de complementar a alimentação do seu pet com colágeno natural e nutrientes importantes para pele, articulações e bem-estar.
         </motion.p>
-        <motion.div variants={fadeUp} className="bg-accent/10 border border-accent/30 rounded-2xl p-5 flex items-center gap-3 justify-center mt-8">
-          <Info className="w-5 h-5 text-accent shrink-0" />
-          <p className="font-semibold text-accent-foreground">Não é caldo líquido.</p>
-        </motion.div>
       </motion.div>
     </div>
   </section>
