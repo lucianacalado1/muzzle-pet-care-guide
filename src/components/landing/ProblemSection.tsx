@@ -32,10 +32,10 @@ const ProblemSection = () => (
         <motion.div variants={fadeUp} className="flex items-center justify-center gap-2 mb-4">
           <AlertTriangle className="w-6 h-6 text-accent" />
         </motion.div>
-        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-10">
+        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-4">
           Você percebe algum desses sinais no seu pet?
         </motion.h2>
-        <motion.div variants={fadeUp} className="space-y-4 mb-8">
+        <motion.div variants={fadeUp} className="space-y-4 mt-8 mb-8">
           {problems.map((p) => (
             <div key={p} className="flex gap-3 items-center bg-background rounded-xl p-4 border border-border">
               <div className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" />

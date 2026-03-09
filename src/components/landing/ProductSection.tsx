@@ -20,13 +20,13 @@ const ProductSection = () => (
         viewport={{ once: true }}
         variants={stagger}
       >
-        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-8">
+        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-4">
           O que são as gominhas Muzzle
         </motion.h2>
-        <motion.p variants={fadeUp} className="text-lg text-muted-foreground text-center mb-8 leading-relaxed">
+        <motion.p variants={fadeUp} className="text-lg text-muted-foreground text-center mb-6 leading-relaxed">
           Snacks naturais em formato de gelatina feitos a partir de caldo de ossos concentrado. Uma forma simples de complementar a alimentação com colágeno e nutrientes importantes.
         </motion.p>
-        <motion.div variants={fadeUp} className="bg-accent/10 border border-accent/30 rounded-2xl p-5 flex items-center gap-3 justify-center">
+        <motion.div variants={fadeUp} className="bg-accent/10 border border-accent/30 rounded-2xl p-5 flex items-center gap-3 justify-center mt-8">
           <Info className="w-5 h-5 text-accent shrink-0" />
           <p className="font-semibold text-accent-foreground">Não é caldo líquido.</p>
         </motion.div>

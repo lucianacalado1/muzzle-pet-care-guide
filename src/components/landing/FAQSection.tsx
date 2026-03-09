@@ -44,16 +44,16 @@ const FAQSection = () => (
         viewport={{ once: true }}
         variants={fadeUp}
       >
-        <div className="text-center mb-10 max-w-[720px] mx-auto">
+        <div className="text-center mb-6 max-w-[720px] mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Perguntas frequentes
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground mb-6">
             Tire as principais dúvidas sobre as gominhas funcionais Muzzle.
           </p>
         </div>
 
-        <Accordion type="single" collapsible defaultValue="item-0" className="w-full space-y-4">
+        <Accordion type="single" collapsible defaultValue="item-0" className="w-full space-y-4 mt-8">
           {faqs.map((faq, index) => (
             <AccordionItem 
               key={index} 

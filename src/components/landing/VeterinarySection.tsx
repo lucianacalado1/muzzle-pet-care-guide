@@ -28,7 +28,7 @@ const VeterinarySection = () => (
           <p className="text-lg text-muted-foreground mb-6">
             As gominhas Muzzle foram formuladas com base em princípios de nutrição funcional para pets.
           </p>
-          <p className="text-muted-foreground leading-relaxed">
+          <p className="text-muted-foreground leading-relaxed mt-8">
             O colágeno natural presente no caldo de ossos é uma fonte rica em aminoácidos importantes para pele, articulações e tecidos conjuntivos. Estudos em nutrição animal mostram que proteínas estruturais como o colágeno podem contribuir para a manutenção da mobilidade, da saúde da pele e do bem-estar geral de cães e gatos.
           </p>
         </motion.div>
