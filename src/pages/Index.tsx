@@ -6,7 +6,6 @@ import BenefitsSection from "@/components/landing/BenefitsSection";
 import VeterinarySection from "@/components/landing/VeterinarySection";
 import HowToUseSection from "@/components/landing/HowToUseSection";
 
-import StorageSection from "@/components/landing/StorageSection";
 import AuthoritySection from "@/components/landing/AuthoritySection";
 import SocialProofSection from "@/components/landing/SocialProofSection";
 import OurStorySection from "@/components/landing/OurStorySection";
@@ -23,7 +22,6 @@ const Index = () => (
     <VeterinarySection />
     <HowToUseSection />
     
-    <StorageSection />
     <AuthoritySection />
     <SocialProofSection />
     <OurStorySection />
