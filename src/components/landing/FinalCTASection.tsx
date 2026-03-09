@@ -8,7 +8,7 @@ const fadeUp = {
 };
 
 const FinalCTASection = () => (
-  <section className="py-14 md:py-20 bg-primary">
+  <section className="py-14 md:py-20 bg-gradient-to-br from-primary to-foreground">
     <div className="container">
       <motion.div
         className="max-w-2xl mx-auto text-center"

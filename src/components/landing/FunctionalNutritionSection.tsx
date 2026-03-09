@@ -18,7 +18,7 @@ const pillars = [
 ];
 
 const FunctionalNutritionSection = () => (
-  <section id="nutricao-funcional" className="py-14 md:py-20">
+  <section id="nutricao-funcional" className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
       <motion.div
         className="max-w-3xl mx-auto text-center"

@@ -35,7 +35,7 @@ const faqs = [
 ];
 
 const FAQSection = () => (
-  <section className="py-14 md:py-20 bg-card">
+  <section className="py-14 md:py-20 bg-background">
     <div className="container">
       <motion.div
         className="max-w-[800px] mx-auto"
