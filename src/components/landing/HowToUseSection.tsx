@@ -11,7 +11,7 @@ const stagger = {
 };
 
 const HowToUseSection = () => (
-  <section id="como-usar" className="py-14 md:py-20">
+  <section id="como-usar" className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
       <motion.h2
         className="text-3xl md:text-4xl font-bold text-center mb-12"
