@@ -11,19 +11,19 @@ const stagger = {
 };
 
 const problems = [
-  "Pelo opaco ou queda excessiva",
-  "Coceiras ou pele sensível",
-  "Rigidez nas articulações",
-  "Dificuldade para se movimentar",
-  "Falta de energia",
-  "Alimentação pouco nutritiva",
+  "Pele ou pelagem opaca",
+  "Rigidez ou dificuldade para se movimentar",
+  "Queda excessiva de pelo",
+  "Baixa disposição",
+  "Sensibilidade nas articulações",
+  "Recuperação lenta após atividades",
 ];
 
 const ProblemSection = () => (
-  <section className="py-14 md:py-20 bg-soft-cream">
+  <section className="py-[56px] lg:py-[80px] bg-soft-cream">
     <div className="container">
       <motion.div
-        className="max-w-[720px] mx-auto"
+        className="max-w-[1024px] mx-auto"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -32,20 +32,25 @@ const ProblemSection = () => (
         <motion.div variants={fadeUp} className="flex items-center justify-center gap-2 mb-4">
           <AlertTriangle className="w-6 h-6 text-accent" />
         </motion.div>
-        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-4">
+        
+        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-3">
           Você percebe algum desses sinais no seu pet?
         </motion.h2>
-        <motion.div variants={fadeUp} className="space-y-4 mt-8 mb-8">
-          {problems.map((p) => (
-            <div key={p} className="flex gap-3 items-center bg-background rounded-xl p-4 border border-border">
-              <div className="w-2.5 h-2.5 rounded-full bg-accent shrink-0" />
+        
+        <motion.p variants={fadeUp} className="text-center text-muted-foreground text-lg mb-8">
+          Pequenos sinais podem indicar que o organismo do seu pet precisa de suporte nutricional.
+        </motion.p>
+
+        <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {problems.map((p, index) => (
+            <div 
+              key={index} 
+              className="bg-background rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-shadow border border-border flex items-center justify-center min-h-[120px]"
+            >
               <p className="text-foreground font-medium">{p}</p>
             </div>
           ))}
         </motion.div>
-        <motion.p variants={fadeUp} className="text-center text-muted-foreground text-sm italic">
-          Muitos desses sinais estão ligados à falta de nutrientes importantes na alimentação.
-        </motion.p>
       </motion.div>
     </div>
   </section>
