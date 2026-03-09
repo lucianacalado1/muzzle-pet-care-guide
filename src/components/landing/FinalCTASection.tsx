@@ -11,7 +11,7 @@ const FinalCTASection = () => (
   <section className="py-14 md:py-20 bg-gradient-to-br from-primary to-foreground">
     <div className="container">
       <motion.div
-        className="max-w-2xl mx-auto text-center"
+        className="max-w-[720px] mx-auto text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

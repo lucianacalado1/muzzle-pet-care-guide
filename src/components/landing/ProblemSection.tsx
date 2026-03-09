@@ -23,7 +23,7 @@ const ProblemSection = () => (
   <section className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
       <motion.div
-        className="max-w-2xl mx-auto"
+        className="max-w-[720px] mx-auto"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
