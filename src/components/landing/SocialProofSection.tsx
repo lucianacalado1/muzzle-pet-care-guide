@@ -118,27 +118,35 @@ const SocialProofSection = () => (
       </motion.div>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mt-12"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-12"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={stagger}
       >
-        {videos.map((v, i) => (
+        {mediaItems.map((m, i) => (
           <motion.div key={i} variants={fadeUp} className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm flex flex-col">
             <div className="aspect-video relative bg-muted/30">
-              <video 
-                src={v.src} 
-                className="w-full h-full object-cover" 
-                controls
-                preload="metadata"
-              />
+              {m.type === "video" ? (
+                <video 
+                  src={m.src} 
+                  className="w-full h-full object-cover" 
+                  controls
+                  preload="metadata"
+                />
+              ) : (
+                <img 
+                  src={m.src} 
+                  alt={m.name}
+                  className="w-full h-full object-cover"
+                />
+              )}
             </div>
             <div className="p-5 flex-1 bg-card">
               <p className="font-bold text-foreground text-base mb-1">
-                {v.name} <span className="font-normal text-muted-foreground text-sm">— {v.pet}</span>
+                {m.name} {m.pet && <span className="font-normal text-muted-foreground text-sm">— {m.pet}</span>}
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed">"{v.text}"</p>
+              <p className="text-muted-foreground text-sm leading-relaxed">"{m.text}"</p>
             </div>
           </motion.div>
         ))}
