@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import laraImg from "@/assets/lara.jpeg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -31,23 +32,33 @@ const testimonials = [
   },
 ];
 
-const videos = [
+const mediaItems = [
   {
-    name: "Luna",
-    pet: "Golden Retriever",
-    text: "Adorou desde o primeiro dia.",
+    type: "image",
+    name: "Lara",
+    pet: "Maltês",
+    text: "Fã nº1 das gominhas Muzzle 🐾",
+    src: laraImg,
+  },
+  {
+    type: "video",
+    name: "Testando com gatos",
+    pet: "",
+    text: "Um aprovou de primeira. Outro precisou de adaptação — algo comum com gatos.",
     src: "/videos/video-1.mp4",
   },
   {
-    name: "Milo",
-    pet: "Gato Persa",
-    text: "Mesmo sendo exigente, aceitou bem.",
+    type: "video",
+    name: "Thor",
+    pet: "Labrador",
+    text: "Aceitou como snack logo na primeira tentativa.",
     src: "/videos/video-2.mp4",
   },
   {
-    name: "Thor",
-    pet: "Labrador",
-    text: "Mais disposição nas caminhadas.",
+    type: "video",
+    name: "Zeus",
+    pet: "aprovou de primeira 🐾",
+    text: "Dos 3 gatinhos que testaram, apenas um não aceitou de imediato.",
     src: "/videos/video-3.mp4",
   }
 ];
