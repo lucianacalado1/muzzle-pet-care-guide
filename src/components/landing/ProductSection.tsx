@@ -11,7 +11,7 @@ const stagger = {
 };
 
 const ProductSection = () => (
-  <section id="o-que-sao" className="py-14 md:py-20">
+  <section id="o-que-sao" className="py-14 md:py-20 bg-background">
     <div className="container">
       <motion.div
         className="max-w-2xl mx-auto"
