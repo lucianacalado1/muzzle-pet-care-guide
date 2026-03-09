@@ -26,7 +26,7 @@ const FinalCTASection = () => (
         <div className="flex flex-col items-center gap-4">
           <Link
             to="/quiz"
-            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-full text-lg font-bold hover:opacity-90 transition-opacity shadow-lg"
+            className="inline-flex justify-center items-center gap-2 bg-accent text-accent-foreground px-8 h-[52px] md:h-14 w-full md:w-auto rounded-2xl text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg"
           >
             <PawPrint className="w-5 h-5" />
             Descobrir a dose ideal
