@@ -20,10 +20,10 @@ const FinalCTASection = () => (
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
           Descubra a dose ideal para o seu pet
         </h2>
-        <p className="text-primary-foreground/80 mb-8">
+        <p className="text-primary-foreground/80 mb-6">
           Responda algumas perguntas rápidas e receba uma recomendação personalizada.
         </p>
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4 mt-8">
           <Link
             to="/quiz"
             className="inline-flex justify-center items-center gap-2 bg-accent text-accent-foreground px-8 h-[52px] md:h-14 w-full md:w-auto rounded-2xl text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg"

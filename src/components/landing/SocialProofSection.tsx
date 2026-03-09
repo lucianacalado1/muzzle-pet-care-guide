@@ -35,7 +35,7 @@ const SocialProofSection = () => (
   <section className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
       <motion.h2
-        className="text-3xl md:text-4xl font-bold text-center mb-12"
+        className="text-3xl md:text-4xl font-bold text-center mb-4"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -44,7 +44,7 @@ const SocialProofSection = () => (
         Pets que já experimentaram
       </motion.h2>
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

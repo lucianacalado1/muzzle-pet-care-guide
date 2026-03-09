@@ -22,7 +22,7 @@ const BenefitsSection = () => (
   <section id="beneficios" className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
       <motion.h2
-        className="text-3xl md:text-4xl font-bold text-center mb-12"
+        className="text-3xl md:text-4xl font-bold text-center mb-4"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -31,7 +31,7 @@ const BenefitsSection = () => (
         Benefícios para o seu pet
       </motion.h2>
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-5xl mx-auto"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-5xl mx-auto mt-8"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

@@ -20,14 +20,14 @@ const OurStorySection = () => (
         viewport={{ once: true }}
         variants={stagger}
       >
-        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-2">
+        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-4">
           Nossa História
         </motion.h2>
-        <motion.p variants={fadeUp} className="text-center text-accent font-semibold mb-10">
+        <motion.p variants={fadeUp} className="text-center text-accent font-semibold mb-6">
           Essa é a Lara. A inspiração por trás da Muzzle Pet Food.
         </motion.p>
 
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center mt-8">
           <motion.div variants={fadeUp} className="w-full md:w-2/5 shrink-0">
             <img
               src={laraImg}

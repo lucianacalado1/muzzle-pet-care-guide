@@ -31,17 +31,17 @@ const FunctionalNutritionSection = () => (
           Nutrição funcional para quem faz parte da família
         </motion.h2>
 
-        <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-4">
+        <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-6">
           A Muzzle nasceu com um propósito simples: ajudar tutores a oferecer uma nutrição mais natural, funcional e consciente para seus pets.
         </motion.p>
 
-        <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-10">
+        <motion.p variants={fadeUp} className="text-muted-foreground leading-relaxed mb-6">
           Os produtos foram pensados para complementar a alimentação diária com nutrientes importantes, como <strong className="text-foreground">colágeno natural</strong>, que contribui para:
         </motion.p>
 
         <motion.div
           variants={stagger}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 mb-10"
         >
           {pillars.map((p) => (
             <motion.div
