@@ -33,13 +33,9 @@ const ProblemSection = () => (
           <AlertTriangle className="w-6 h-6 text-accent" />
         </motion.div>
         
-        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-3">
+        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-[32px]">
           Você percebe algum desses sinais no seu pet?
         </motion.h2>
-        
-        <motion.p variants={fadeUp} className="text-center text-muted-foreground text-lg mb-8">
-          Pequenos sinais podem indicar que o organismo do seu pet precisa de suporte nutricional.
-        </motion.p>
 
         <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {problems.map((p, index) => (
