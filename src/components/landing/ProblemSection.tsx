@@ -1,14 +1,4 @@
-import { motion } from "framer-motion";
 import { AlertTriangle } from "lucide-react";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
-
-const stagger = {
-  visible: { transition: { staggerChildren: 0.1 } },
-};
 
 const problems = [
   "Pele ou pelagem opaca",
@@ -19,37 +9,35 @@ const problems = [
   "Recuperação lenta após atividades",
 ];
 
-const ProblemSection = () => (
-  <section className="py-[56px] lg:py-[80px] bg-soft-cream">
-    <div className="container">
-      <motion.div
-        className="max-w-[1024px] mx-auto"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={stagger}
-      >
-        <motion.div variants={fadeUp} className="flex items-center justify-center gap-2 mb-4">
+const ProblemSection = () => {
+  return (
+    <section className="py-14 lg:py-20 bg-soft-cream">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-center gap-2 mb-4">
           <AlertTriangle className="w-6 h-6 text-accent" />
-        </motion.div>
+        </div>
         
-        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-[32px]">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
           Você percebe algum desses sinais no seu pet?
-        </motion.h2>
+        </h2>
+        
+        <p className="text-center text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
+          Pequenos sinais podem indicar que o organismo do seu pet precisa de suporte nutricional.
+        </p>
 
-        <motion.div variants={fadeUp} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {problems.map((p, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {problems.map((problem, index) => (
             <div 
               key={index} 
-              className="bg-background rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-shadow border border-border flex items-center justify-center min-h-[120px]"
+              className="bg-background rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow border border-border flex items-center justify-center min-h-[100px]"
             >
-              <p className="text-foreground font-medium">{p}</p>
+              <p className="text-foreground font-medium">{problem}</p>
             </div>
           ))}
-        </motion.div>
-      </motion.div>
-    </div>
-  </section>
-);
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default ProblemSection;
