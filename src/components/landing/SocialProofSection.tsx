@@ -31,9 +31,39 @@ const testimonials = [
   },
 ];
 
+const videos = [
+  {
+    name: "Luna",
+    pet: "Golden Retriever",
+    text: "Adorou desde o primeiro dia.",
+    src: "/videos/video-1.mp4",
+  },
+  {
+    name: "Milo",
+    pet: "Gato Persa",
+    text: "Mesmo sendo exigente, aceitou bem.",
+    src: "/videos/video-2.mp4",
+  },
+  {
+    name: "Thor",
+    pet: "Labrador",
+    text: "Mais disposição nas caminhadas.",
+    src: "/videos/video-3.mp4",
+  }
+];
+
 const SocialProofSection = () => (
   <section className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
+      <motion.p
+        className="text-sm md:text-base text-center text-muted-foreground mb-3 font-medium"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeUp}
+      >
+        Mais de 50 pets já experimentaram e aprovaram as gominhas Muzzle.
+      </motion.p>
       <motion.h2
         className="text-3xl md:text-4xl font-bold text-center mb-4"
         initial="hidden"
@@ -43,8 +73,9 @@ const SocialProofSection = () => (
       >
         Pets que já experimentaram
       </motion.h2>
+
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-8"
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -54,7 +85,7 @@ const SocialProofSection = () => (
           <motion.div
             key={t.name}
             variants={fadeUp}
-            className="bg-card rounded-2xl p-6 border border-border"
+            className="bg-card rounded-2xl p-6 border border-border shadow-sm"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center text-2xl">
@@ -71,6 +102,33 @@ const SocialProofSection = () => (
               ))}
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">"{t.text}"</p>
+          </motion.div>
+        ))}
+      </motion.div>
+
+      <motion.div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mt-12"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={stagger}
+      >
+        {videos.map((v, i) => (
+          <motion.div key={i} variants={fadeUp} className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm flex flex-col">
+            <div className="aspect-video relative bg-muted/30">
+              <video 
+                src={v.src} 
+                className="w-full h-full object-cover" 
+                controls
+                preload="metadata"
+              />
+            </div>
+            <div className="p-5 flex-1 bg-card">
+              <p className="font-bold text-foreground text-base mb-1">
+                {v.name} <span className="font-normal text-muted-foreground text-sm">— {v.pet}</span>
+              </p>
+              <p className="text-muted-foreground text-sm leading-relaxed">"{v.text}"</p>
+            </div>
           </motion.div>
         ))}
       </motion.div>
