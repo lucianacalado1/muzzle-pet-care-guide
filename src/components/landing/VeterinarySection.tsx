@@ -39,7 +39,7 @@ const VeterinarySection = () =>
         className="w-full lg:w-auto lg:min-w-[320px]">
         
           <div className="bg-card rounded-2xl p-6 border border-border shadow-sm">
-            <div className="w-12 h-12 rounded-full bg-accent/20 mb-4 flex-row flex items-center justify-center">
+            <div className="w-12 h-12 rounded-full bg-accent/20 mb-4 flex items-center justify-center mx-auto">
               <Stethoscope className="w-6 h-6 text-accent" />
             </div>
             <div className="flex items-center gap-2 mb-3">
