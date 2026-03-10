@@ -16,6 +16,7 @@ const benefits = [
   { icon: Heart, title: "Mobilidade", desc: "Mais mobilidade" },
   { icon: Droplets, title: "Nutrição", desc: "Nutrição complementar" },
   { icon: Leaf, title: "Ingredientes", desc: "Ingredientes naturais" },
+  { icon: Leaf, title: "Sem conservantes", desc: "Snack sem conservantes" },
 ];
 
 const BenefitsSection = () => (
