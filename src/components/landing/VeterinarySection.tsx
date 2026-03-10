@@ -3,23 +3,23 @@ import { Stethoscope, ShieldCheck } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
 const stagger = {
-  visible: { transition: { staggerChildren: 0.15 } },
+  visible: { transition: { staggerChildren: 0.15 } }
 };
 
-const VeterinarySection = () => (
-  <section className="py-14 md:py-20 bg-background">
+const VeterinarySection = () =>
+<section className="py-14 md:py-20 bg-background">
     <div className="container">
       <motion.div
-        className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={stagger}
-      >
+      className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={stagger}>
+      
         {/* Left side - Text content */}
         <motion.div variants={fadeUp} className="flex-1 max-w-[720px]">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
@@ -35,11 +35,11 @@ const VeterinarySection = () => (
 
         {/* Right side - Credibility card */}
         <motion.div
-          variants={fadeUp}
-          className="w-full lg:w-auto lg:min-w-[320px]"
-        >
+        variants={fadeUp}
+        className="w-full lg:w-auto lg:min-w-[320px]">
+        
           <div className="bg-card rounded-2xl p-6 border border-border shadow-sm">
-            <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center mb-4">
+            <div className="w-12 h-12 rounded-full bg-accent/20 mb-4 flex-row flex items-center justify-center">
               <Stethoscope className="w-6 h-6 text-accent" />
             </div>
             <div className="flex items-center gap-2 mb-3">
@@ -60,7 +60,7 @@ const VeterinarySection = () => (
         </motion.div>
       </motion.div>
     </div>
-  </section>
-);
+  </section>;
+
 
 export default VeterinarySection;
