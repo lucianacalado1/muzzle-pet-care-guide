@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import laraImg from "@/assets/lara.jpeg";
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -34,11 +34,11 @@ const testimonials = [
 
 const mediaItems = [
   {
-    type: "image",
-    name: "Lara",
-    pet: "Maltês",
-    text: "Fã nº1 das gominhas Muzzle 🐾",
-    src: laraImg,
+    type: "video",
+    name: "Cookie",
+    pet: "",
+    text: "Cookie aprovou o novo snack de primeira",
+    src: "/videos/video-4.mp4",
   },
   {
     type: "video",
