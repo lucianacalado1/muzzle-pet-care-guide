@@ -34,11 +34,11 @@ const testimonials = [
 
 const mediaItems = [
   {
-    type: "image",
-    name: "Lara",
-    pet: "Maltês",
-    text: "Fã nº1 das gominhas Muzzle 🐾",
-    src: laraImg,
+    type: "video",
+    name: "Cookie",
+    pet: "",
+    text: "Cookie aprovou o novo snack de primeira",
+    src: "/videos/video-4.mp4",
   },
   {
     type: "video",
