@@ -25,7 +25,7 @@ const Index = () => (
     <AuthoritySection />
     <SocialProofSection />
     <OurStorySection />
-    <FunctionalNutritionSection />
+    
     <FAQSection />
     <FinalCTASection />
   </Layout>
