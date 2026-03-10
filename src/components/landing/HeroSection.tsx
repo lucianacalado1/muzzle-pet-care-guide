@@ -31,7 +31,7 @@ const HeroSection = () =>
               <PawPrint className="w-4 h-4" /> Receita desenvolvida com orientação veterinária
             </span>
           </motion.div>
-          <motion.h1 variants={fadeUp} className="text-4xl font-extrabold leading-tight mb-6 text-center md:text-5xl">Sack funcional para cães e gatos
+          <motion.h1 variants={fadeUp} className="text-4xl font-extrabold leading-tight mb-6 text-center md:text-5xl">Snack funcional para cães e gatos
 
         </motion.h1>
           <motion.p variants={fadeUp} className="text-lg md:text-xl text-muted-foreground mb-4">
