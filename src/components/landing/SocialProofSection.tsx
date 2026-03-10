@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-import laraImg from "@/assets/lara.jpeg";
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
