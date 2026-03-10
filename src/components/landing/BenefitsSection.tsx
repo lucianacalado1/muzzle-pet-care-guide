@@ -16,6 +16,7 @@ const benefits = [
   { icon: Heart, title: "Mobilidade", desc: "Mais mobilidade" },
   { icon: Droplets, title: "Nutrição", desc: "Nutrição complementar" },
   { icon: Leaf, title: "Ingredientes", desc: "Ingredientes naturais" },
+  { icon: Leaf, title: "Sem conservantes", desc: "Snack sem conservantes" },
 ];
 
 const BenefitsSection = () => (
@@ -31,7 +32,7 @@ const BenefitsSection = () => (
         Benefícios para o seu pet
       </motion.h2>
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-5xl mx-auto mt-8"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto mt-8"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
