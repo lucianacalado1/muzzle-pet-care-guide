@@ -72,8 +72,14 @@ const Quiz = () => {
     try {
       await supabase.from("leads").insert({
         nome_pet: data.petName,
-        tipo_pet: data.species,
-        peso_pet: parseFloat(data.weight) || 0,
+        especie: data.species,
+        idade: data.age,
+        raca: data.breed,
+        porte: data.size,
+        peso: parseFloat(data.weight) || 0,
+        sexo: data.sex,
+        alimentacao: data.diet,
+        objetivo: data.goals.join(", "),
         email: data.email,
         dose_recomendada: dose,
       });
