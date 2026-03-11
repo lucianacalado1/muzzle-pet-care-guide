@@ -6,7 +6,8 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
-import { QuizData } from "@/types/quiz";
+import { QuizData, calculateDose } from "@/types/quiz";
+import { supabase } from "@/lib/supabase";
 
 const slideVariants = {
   enter: { opacity: 0, x: 40 },
