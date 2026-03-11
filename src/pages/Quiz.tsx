@@ -70,7 +70,7 @@ const Quiz = () => {
     const dose = calculateDose(data.species, parseFloat(data.weight) || 0);
 
     try {
-      await supabase.from("leads").insert({
+      const { error } = await supabase.from("leads").insert({
         nome_pet: data.petName,
         especie: data.species,
         idade: data.age,
@@ -81,8 +81,10 @@ const Quiz = () => {
         alimentacao: data.diet,
         objetivo: data.goals.join(", "),
         email: data.email,
+        whatsapp: "",
         dose_recomendada: dose,
       });
+      if (error) console.error("Supabase insert error:", error);
     } catch (err) {
       console.error("Error inserting lead:", err);
     }
