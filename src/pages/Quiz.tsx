@@ -66,7 +66,21 @@ const Quiz = () => {
     }
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
+    const dose = calculateDose(data.species, parseFloat(data.weight) || 0);
+
+    try {
+      await supabase.from("leads").insert({
+        nome_pet: data.petName,
+        tipo_pet: data.species,
+        peso_pet: parseFloat(data.weight) || 0,
+        email: data.email,
+        dose_recomendada: dose,
+      });
+    } catch (err) {
+      console.error("Error inserting lead:", err);
+    }
+
     localStorage.setItem("muzzle-quiz", JSON.stringify(data));
     navigate("/resultado");
   };
