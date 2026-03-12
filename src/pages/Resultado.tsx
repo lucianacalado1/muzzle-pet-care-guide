@@ -25,11 +25,12 @@ const Resultado = () => {
 
   if (!data) return null;
 
+  const speciesLabel = data.species === "cat" ? "Gato" : "Cão";
   const whatsappMessage = encodeURIComponent(
-    `Olá! Acabei de fazer o teste da Muzzle para o meu pet ${data.petName} e recebi a recomendação de ${dose} gominhas por dia. Gostaria de fazer o pedido.`
+    `Olá! Acabei de fazer o teste no site da Muzzle.\n\nPet: ${data.petName}\nEspécie: ${speciesLabel}\nPeso: ${data.weight}kg\n\nDose recomendada: ${dose} gominhas por dia.\n\nGostaria de fazer o pedido.`
   );
 
-  const whatsappUrl = `https://wa.me/?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/351917191314?text=${whatsappMessage}`;
 
   const routineTips = [
     "Ofereça diariamente",
