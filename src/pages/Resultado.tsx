@@ -116,6 +116,35 @@ const Resultado = () => {
                 <RotateCcw className="w-4 h-4" /> Refazer o quiz
               </Button>
             </Link>
+
+            <Button
+              variant="outline"
+              className="mt-4 w-full"
+              onClick={async () => {
+                const { error } = await supabase.from("leads").insert({
+                  nome_pet: "teste",
+                  peso_pet: 10,
+                  idade_pet: "3",
+                  raca_pet: "maltes",
+                  especie_pet: "cao",
+                  porte_pet: "pequeno",
+                  sexo_pet: "femea",
+                  objetivo_pet: "pele",
+                  alimentacao_pet: "racao",
+                  email: "teste@email.com",
+                  whatsapp: "",
+                  dose_recomendada: "3",
+                });
+                if (error) {
+                  console.error("Test insert error:", error);
+                  alert("Erro: " + error.message);
+                } else {
+                  alert("Lead de teste inserido com sucesso!");
+                }
+              }}
+            >
+              🧪 Inserir lead de teste
+            </Button>
           </div>
         </motion.div>
       </div>
