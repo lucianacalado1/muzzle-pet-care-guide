@@ -69,24 +69,32 @@ const Quiz = () => {
   const handleSubmit = async () => {
     const dose = calculateDose(data.species, parseFloat(data.weight) || 0);
 
+    const payload = {
+      nome_pet: data.petName,
+      peso_pet: parseFloat(data.weight) || 0,
+      idade_pet: data.age,
+      raca_pet: data.breed,
+      especie_pet: data.species,
+      porte_pet: data.size,
+      sexo_pet: data.sex,
+      objetivo_pet: data.goals.join(", "),
+      alimentacao_pet: data.diet,
+      email: data.email,
+      whatsapp: "",
+      dose_recomendada: dose,
+    };
+
+    console.log("[Muzzle] Submitting lead to Supabase:", payload);
+
     try {
-      const { error } = await supabase.from("leads").insert({
-        nome_pet: data.petName,
-        peso_pet: parseFloat(data.weight) || 0,
-        idade_pet: data.age,
-        raca_pet: data.breed,
-        especie_pet: data.species,
-        porte_pet: data.size,
-        sexo_pet: data.sex,
-        objetivo_pet: data.goals.join(", "),
-        alimentacao_pet: data.diet,
-        email: data.email,
-        whatsapp: "",
-        dose_recomendada: dose,
-      });
-      if (error) console.error("Supabase insert error:", error);
+      const { data: result, error } = await supabase.from("leads").insert(payload);
+      if (error) {
+        console.error("[Muzzle] Supabase insert error:", error.message, error);
+      } else {
+        console.log("[Muzzle] Lead inserted successfully:", result);
+      }
     } catch (err) {
-      console.error("Error inserting lead:", err);
+      console.error("[Muzzle] Unexpected error inserting lead:", err);
     }
 
     localStorage.setItem("muzzle-quiz", JSON.stringify(data));
