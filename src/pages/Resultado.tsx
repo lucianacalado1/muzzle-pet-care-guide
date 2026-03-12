@@ -117,37 +117,6 @@ const Resultado = () => {
               </Button>
             </Link>
 
-            <Button
-              variant="outline"
-              className="mt-4 w-full"
-              onClick={async () => {
-                const testPayload = {
-                  nome_pet: "teste",
-                  peso_pet: 10,
-                  idade_pet: "3",
-                  raca_pet: "maltes",
-                  especie_pet: "cao",
-                  porte_pet: "pequeno",
-                  sexo_pet: "femea",
-                  objetivo_pet: "pele",
-                  alimentacao_pet: "racao",
-                  email: "teste@email.com",
-                  whatsapp: "",
-                  dose_recomendada: "3",
-                };
-                console.log("[Muzzle] Test insert payload:", testPayload);
-                const { data: result, error } = await supabase.from("leads").insert(testPayload);
-                if (error) {
-                  console.error("[Muzzle] Test insert error:", error.message, error);
-                  alert("Erro: " + error.message);
-                } else {
-                  console.log("[Muzzle] Test insert success:", result);
-                  alert("Lead de teste inserido com sucesso!");
-                }
-              }}
-            >
-              🧪 Inserir lead de teste
-            </Button>
           </div>
         </motion.div>
       </div>
