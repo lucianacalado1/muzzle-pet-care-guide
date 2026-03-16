@@ -1,55 +1,75 @@
 import { motion } from "framer-motion";
-import { Stethoscope, ShieldCheck } from "lucide-react";
+import { Stethoscope, ShieldCheck, Sparkles, Bone, Heart, Leaf } from "lucide-react";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 const stagger = {
-  visible: { transition: { staggerChildren: 0.15 } }
+  visible: { transition: { staggerChildren: 0.12 } },
 };
 
-const VeterinarySection = () =>
-<section className="py-14 md:py-20 bg-background">
+const keyPoints = [
+  { icon: Sparkles, text: "Fonte natural de colágeno" },
+  { icon: Heart, text: "Apoio à pele e pelagem" },
+  { icon: Bone, text: "Suporte às articulações" },
+  { icon: Leaf, text: "Nutrição complementar para cães e gatos" },
+];
+
+const VeterinarySection = () => (
+  <section className="py-14 md:py-20 bg-background">
     <div className="container">
       <motion.div
-      className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      variants={stagger}>
-      
-        {/* Left side - Text content */}
+        className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={stagger}
+      >
+        {/* Left column */}
         <motion.div variants={fadeUp} className="flex-1 max-w-[720px]">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Desenvolvido com orientação veterinária
           </h2>
-          <p className="text-lg text-muted-foreground mb-6">
-            As gominhas Muzzle foram formuladas com base em princípios de nutrição funcional para pets.
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            As gominhas Muzzle foram formuladas com base em princípios de nutrição funcional para pets, utilizando caldo de ossos concentrado como fonte natural de colágeno.
           </p>
-          <p className="text-muted-foreground leading-relaxed mt-8">
-            O colágeno natural presente no caldo de ossos é uma fonte rica em aminoácidos importantes para pele, articulações e tecidos conjuntivos. Estudos em nutrição animal mostram que proteínas estruturais como o colágeno podem contribuir para a manutenção da mobilidade, da saúde da pele e do bem-estar geral de cães e gatos.
-          </p>
+          <ul className="space-y-4">
+            {keyPoints.map((point) => (
+              <motion.li
+                key={point.text}
+                variants={fadeUp}
+                className="flex items-center gap-3"
+              >
+                <div className="w-9 h-9 rounded-full bg-accent/15 flex items-center justify-center shrink-0">
+                  <point.icon className="w-[18px] h-[18px] text-accent" />
+                </div>
+                <span className="text-foreground font-medium text-sm md:text-base">
+                  {point.text}
+                </span>
+              </motion.li>
+            ))}
+          </ul>
         </motion.div>
 
-        {/* Right side - Credibility card */}
+        {/* Right column – credibility card */}
         <motion.div
-        variants={fadeUp}
-        className="w-full lg:w-auto lg:min-w-[320px]">
-        
-          <div className="bg-card rounded-2xl p-6 border border-border shadow-sm">
-            <div className="w-12 h-12 rounded-full bg-accent/20 mb-4 flex items-center justify-center mx-auto">
-              <Stethoscope className="w-6 h-6 text-accent" />
+          variants={fadeUp}
+          className="w-full lg:w-auto lg:min-w-[340px]"
+        >
+          <div className="bg-card rounded-2xl p-7 border border-border shadow-md">
+            <div className="w-14 h-14 rounded-full bg-accent/20 mb-5 flex items-center justify-center mx-auto">
+              <Stethoscope className="w-7 h-7 text-accent" />
             </div>
-            <div className="flex items-center gap-2 mb-3">
-              <ShieldCheck className="w-5 h-5 text-primary" />
-              <p className="text-foreground font-semibold text-sm">
+            <div className="flex items-start gap-2.5 mb-4">
+              <ShieldCheck className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+              <p className="text-foreground font-bold text-sm leading-snug">
                 Receita desenvolvida com orientação de nutricionista veterinária
               </p>
             </div>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              Todas as formulações passam por análise criteriosa para garantir segurança, equilíbrio nutricional e benefícios reais para a saúde do seu pet.
+            <p className="text-muted-foreground text-sm leading-relaxed mb-5">
+              As formulações passam por análise criteriosa para garantir segurança, equilíbrio nutricional e benefícios reais para a saúde do seu pet.
             </p>
             <div className="border-t border-border pt-4">
               <p className="text-xs text-muted-foreground italic">
@@ -60,7 +80,7 @@ const VeterinarySection = () =>
         </motion.div>
       </motion.div>
     </div>
-  </section>;
-
+  </section>
+);
 
 export default VeterinarySection;
