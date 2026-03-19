@@ -21,7 +21,7 @@ const FinalCTASection = () => (
           Descubra a dose ideal para o seu pet
         </h2>
         <p className="text-primary-foreground/80 mb-6">
-          Responda algumas perguntas rápidas e receba uma recomendação personalizada.
+          Leva menos de 1 minuto.
         </p>
         <div className="flex flex-col items-center gap-4 mt-8">
           <Link
