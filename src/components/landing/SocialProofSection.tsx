@@ -1,15 +1,5 @@
-import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
-
-const stagger = {
-  visible: { transition: { staggerChildren: 0.12 } },
-};
 
 const testimonials = [
   {
@@ -66,36 +56,23 @@ const mediaItems = [
 const SocialProofSection = () => (
   <section className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
-      <motion.p
+      <p
         className="text-sm md:text-base text-center text-muted-foreground mb-3 font-medium"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
       >
         Mais de 50 pets já experimentaram e aprovaram as gominhas Muzzle.
-      </motion.p>
-      <motion.h2
+      </p>
+      <h2
         className="text-3xl md:text-4xl font-bold text-center mb-4"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
       >
         Pets que já experimentaram
-      </motion.h2>
+      </h2>
 
-      <motion.div
+      <div
         className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={stagger}
       >
         {testimonials.map((t) => (
-          <motion.div
+          <div
             key={t.name}
-            variants={fadeUp}
             className="bg-card rounded-2xl p-6 border border-border shadow-sm"
           >
             <div className="flex items-center gap-3 mb-4">
@@ -113,19 +90,15 @@ const SocialProofSection = () => (
               ))}
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">"{t.text}"</p>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
 
-      <motion.div
+      <div
         className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-12"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={stagger}
       >
         {mediaItems.map((m, i) => (
-          <motion.div key={i} variants={fadeUp} className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm flex flex-col">
+          <div key={i} className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm flex flex-col">
             <div className="aspect-video relative bg-muted/30">
               {m.type === "video" ? (
                 <video 
@@ -148,9 +121,9 @@ const SocialProofSection = () => (
               </p>
               <p className="text-muted-foreground text-sm leading-relaxed">"{m.text}"</p>
             </div>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   </section>
 );

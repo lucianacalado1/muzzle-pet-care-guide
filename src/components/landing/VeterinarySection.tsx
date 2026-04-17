@@ -1,14 +1,4 @@
-import { motion } from "framer-motion";
 import { Stethoscope, ShieldCheck, Sparkles, Bone, Heart, Leaf } from "lucide-react";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
-
-const stagger = {
-  visible: { transition: { staggerChildren: 0.12 } },
-};
 
 const keyPoints = [
   { icon: Sparkles, text: "Fonte natural de colágeno" },
@@ -20,15 +10,11 @@ const keyPoints = [
 const VeterinarySection = () => (
   <section className="py-14 md:py-20 bg-background">
     <div className="container">
-      <motion.div
+      <div
         className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={stagger}
       >
         {/* Left column */}
-        <motion.div variants={fadeUp} className="flex-1 max-w-[720px]">
+        <div className="flex-1 max-w-[720px]">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
             Desenvolvido com orientação veterinária
           </h2>
@@ -37,9 +23,8 @@ const VeterinarySection = () => (
           </p>
           <ul className="space-y-4">
             {keyPoints.map((point) => (
-              <motion.li
+              <li
                 key={point.text}
-                variants={fadeUp}
                 className="flex items-center gap-3"
               >
                 <div className="w-9 h-9 rounded-full bg-accent/15 flex items-center justify-center shrink-0">
@@ -48,14 +33,13 @@ const VeterinarySection = () => (
                 <span className="text-foreground font-medium text-sm md:text-base">
                   {point.text}
                 </span>
-              </motion.li>
+              </li>
             ))}
           </ul>
-        </motion.div>
+        </div>
 
         {/* Right column – credibility card */}
-        <motion.div
-          variants={fadeUp}
+        <div
           className="w-full lg:w-auto lg:min-w-[340px]"
         >
           <div className="bg-card rounded-2xl p-7 border border-border shadow-md">
@@ -77,8 +61,8 @@ const VeterinarySection = () => (
               </p>
             </div>
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </div>
   </section>
 );

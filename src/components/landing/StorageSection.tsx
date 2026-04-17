@@ -1,10 +1,4 @@
-import { motion } from "framer-motion";
 import { Snowflake } from "lucide-react";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
 
 const items = [
   "Manter congelado até 3 meses",
@@ -16,12 +10,8 @@ const items = [
 const StorageSection = () => (
   <section className="py-20">
     <div className="container">
-      <motion.div
+      <div
         className="max-w-2xl mx-auto"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Como conservar</h2>
         <p className="text-lg text-muted-foreground text-center mb-6">
@@ -35,7 +25,7 @@ const StorageSection = () => (
             </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   </section>
 );

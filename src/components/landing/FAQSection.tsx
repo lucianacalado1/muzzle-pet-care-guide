@@ -1,15 +1,9 @@
-import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger } from
 "@/components/ui/accordion";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-};
 
 const faqs = [
 {
@@ -37,12 +31,8 @@ const faqs = [
 const FAQSection = () =>
 <section className="py-14 md:py-20 bg-secondary">
     <div className="container">
-      <motion.div
-      className="max-w-[800px] mx-auto"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      variants={fadeUp}>
+      <div
+      className="max-w-[800px] mx-auto">
       
         <div className="text-center mb-6 max-w-[720px] mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
@@ -69,7 +59,7 @@ const FAQSection = () =>
             </AccordionItem>
         )}
         </Accordion>
-      </motion.div>
+      </div>
     </div>
   </section>;
 
