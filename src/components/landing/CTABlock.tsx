@@ -1,11 +1,5 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { PawPrint } from "lucide-react";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
 
 interface CTABlockProps {
   title?: string;
@@ -16,12 +10,10 @@ interface CTABlockProps {
 const CTABlock = ({ title, text, size = "small" }: CTABlockProps) => (
   <div className={size === "small" ? "py-6 md:py-8" : "py-8 md:py-12"}>
     <div className="container">
-      <motion.div
+      <div
         className="max-w-xl mx-auto text-center flex flex-col items-center gap-3"
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
+        whileInView="visible"}
       >
         {title && (
           <h3 className={`font-semibold ${size === "medium" ? "text-xl md:text-2xl" : "text-base md:text-lg"}`}>
@@ -41,7 +33,7 @@ const CTABlock = ({ title, text, size = "small" }: CTABlockProps) => (
           <PawPrint className="w-5 h-5" />
           Descobrir a dose ideal
         </Link>
-      </motion.div>
+      </div>
     </div>
   </div>
 );

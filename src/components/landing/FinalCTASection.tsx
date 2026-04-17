@@ -1,21 +1,13 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { PawPrint } from "lucide-react";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
 
 const FinalCTASection = () => (
   <section className="py-14 md:py-20 bg-gradient-to-br from-primary to-foreground">
     <div className="container">
-      <motion.div
+      <div
         className="max-w-[720px] mx-auto text-center"
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
+        whileInView="visible"}
       >
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
           Descubra a dose ideal para o seu pet
@@ -35,7 +27,7 @@ const FinalCTASection = () => (
             Leva menos de 30 segundos para descobrir a dose ideal para o seu pet.
           </p>
         </div>
-      </motion.div>
+      </div>
     </div>
   </section>
 );

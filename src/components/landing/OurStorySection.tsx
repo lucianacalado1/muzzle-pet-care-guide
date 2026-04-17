@@ -1,42 +1,30 @@
-import { motion } from "framer-motion";
 import laraImg from "@/assets/lara.jpeg";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
-
-const stagger = {
-  visible: { transition: { staggerChildren: 0.15 } },
-};
 
 const OurStorySection = () => (
   <section id="nossa-historia" className="py-14 md:py-20 bg-background">
     <div className="container">
-      <motion.div
+      <div
         className="max-w-5xl mx-auto"
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={stagger}
+        whileInView="visible"}
       >
-        <motion.h2 variants={fadeUp} className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Nossa História
-        </motion.h2>
-        <motion.p variants={fadeUp} className="text-center text-accent font-semibold mb-6">
+        </h2>
+        <p className="text-center text-accent font-semibold mb-6">
           Essa é a Lara. A inspiração por trás da Muzzle Pet Food.
-        </motion.p>
+        </p>
 
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center mt-8">
-          <motion.div variants={fadeUp} className="w-full md:w-2/5 shrink-0">
+          <div className="w-full md:w-2/5 shrink-0">
             <img
               src={laraImg}
               alt="Lara, a maltês que inspirou a Muzzle Pet Food"
               className="w-full rounded-2xl shadow-lg object-cover aspect-[4/5]"
             />
-          </motion.div>
+          </div>
 
-          <motion.div variants={fadeUp} className="w-full md:w-3/5 space-y-4 text-muted-foreground leading-relaxed text-[0.95rem]">
+          <div className="w-full md:w-3/5 space-y-4 text-muted-foreground leading-relaxed text-[0.95rem]">
             <p>
               Lara é uma maltês carinhosa que sempre fez parte da família. Com o passar dos anos, começaram a surgir sinais de desconforto em uma das patinhas traseiras. Ela lambia constantemente a região e demonstrava sensibilidade ao toque.
             </p>
@@ -58,9 +46,9 @@ const OurStorySection = () => (
             <p className="text-foreground font-semibold italic">
               Foi dessa experiência — inspirada pela Lara — que nasceu a Muzzle Pet Food.
             </p>
-          </motion.div>
+          </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   </section>
 );
