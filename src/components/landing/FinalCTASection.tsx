@@ -5,7 +5,7 @@ const FinalCTASection = () => (
   <section className="py-14 md:py-20 bg-gradient-to-br from-primary to-foreground">
     <div className="container">
       <div
-        className="max-w-[720px] mx-auto text-center"}
+        className="max-w-[720px] mx-auto text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
           Descubra a dose ideal para o seu pet

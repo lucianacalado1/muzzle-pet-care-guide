@@ -4,7 +4,7 @@ const AuthoritySection = () => (
   <section className="py-14 md:py-20 bg-background">
     <div className="container">
       <div
-        className="max-w-[720px] mx-auto text-center"}
+        className="max-w-[720px] mx-auto text-center"
       >
         <div className="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6">
           <ShieldCheck className="w-7 h-7 text-accent" />

@@ -11,7 +11,7 @@ const StorageSection = () => (
   <section className="py-20">
     <div className="container">
       <div
-        className="max-w-2xl mx-auto"}
+        className="max-w-2xl mx-auto"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Como conservar</h2>
         <p className="text-lg text-muted-foreground text-center mb-6">

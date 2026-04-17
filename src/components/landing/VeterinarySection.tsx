@@ -11,7 +11,7 @@ const VeterinarySection = () => (
   <section className="py-14 md:py-20 bg-background">
     <div className="container">
       <div
-        className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start"}
+        className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start"
       >
         {/* Left column */}
         <div className="flex-1 max-w-[720px]">

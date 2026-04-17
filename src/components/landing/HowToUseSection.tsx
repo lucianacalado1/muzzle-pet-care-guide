@@ -4,12 +4,12 @@ const HowToUseSection = () => (
   <section id="como-usar" className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
       <h2
-        className="text-3xl md:text-4xl font-bold text-center mb-4"}
+        className="text-3xl md:text-4xl font-bold text-center mb-4"
       >
         3 formas simples de usar
       </h2>
       <div
-        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-8"}
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-8"
       >
         <div className="bg-card rounded-2xl p-8 text-center border border-border">
           <div className="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
