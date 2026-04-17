@@ -3,29 +3,30 @@ import { PawPrint } from "lucide-react";
 import productHero from "@/assets/product-hero.png";
 
 const HeroSection = () =>
-<section className="relative overflow-hidden pt-4 pb-14 md:pt-6 md:pb-20 bg-white">
-    <div className="container">
+<section className="relative overflow-hidden pb-8 md:pb-12 bg-white">
+    <div className="container pt-2">
       <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
         {/* Text + CTA (desktop: all together, mobile: split around image) */}
         <div
-        className="flex-1 text-center md:text-left">
+        className="flex-1 text-center md:text-left max-w-lg mx-auto md:mx-0">
         
-          <div className="flex flex-nowrap items-center gap-3 mb-6 justify-center md:justify-start overflow-x-auto">
-            <span className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground px-4 py-1.5 rounded-full text-sm font-semibold">
+          <div className="flex flex-wrap items-center gap-3 mb-6 justify-center">
+            <span className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground px-5 py-1.5 rounded-full text-sm font-semibold whitespace-nowrap">
               <PawPrint className="w-4 h-4" /> 100% Natural
             </span>
-            <span className="inline-flex items-center gap-2 bg-[hsl(39,50%,92%)] text-[hsl(150,30%,25%)] px-4 py-1.5 rounded-full text-sm font-medium">
+            <span className="inline-flex items-center gap-2 bg-[hsl(39,50%,92%)] text-[hsl(150,30%,25%)] px-5 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">
               <PawPrint className="w-4 h-4" /> Receita desenvolvida com orientação veterinária
             </span>
           </div>
-          <h1 className="text-4xl font-extrabold leading-tight mb-6 text-center md:text-5xl">Snack funcional para cães e gatos
-
-        </h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            Uma nova forma de cuidar do seu pet{" "}
+            <span className="text-accent italic">simples, natural e funcional</span>
+          </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-4">
-            Gominhas naturais feitas a partir de caldo de ossos concentrado
+            Desenvolvido a partir de caldo de ossos, ingrediente tradicionalmente valorizado pela sua riqueza nutricional.
           </p>
           <p className="text-base text-muted-foreground mb-8 max-w-lg md:mx-0 mx-auto">
-            Suplementação natural para melhorar pele, pelagem e mobilidade do seu pet.
+            Acreditamos que cuidar da saúde do pet não precisa ser complicado, artificial ou agressivo.
           </p>
 
           {/* Product Image - mobile only (before CTA) */}

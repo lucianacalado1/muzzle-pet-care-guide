@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { PawPrint } from "lucide-react";
 
 const FinalCTASection = () => (
-  <section className="py-14 md:py-20 bg-gradient-to-br from-primary to-foreground">
+  <section className="py-8 md:py-12 bg-gradient-to-br from-primary to-foreground">
     <div className="container">
       <div
         className="max-w-[720px] mx-auto text-center"

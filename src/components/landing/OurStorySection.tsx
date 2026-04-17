@@ -1,12 +1,12 @@
 import laraImg from "@/assets/lara.jpeg";
 
 const OurStorySection = () => (
-  <section id="nossa-historia" className="py-14 md:py-20 bg-background">
+  <section id="nossa-historia" className="py-8 md:py-12 bg-background">
     <div className="container">
       <div
         className="max-w-5xl mx-auto"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">
           Nossa História
         </h2>
         <p className="text-center text-accent font-semibold mb-6">

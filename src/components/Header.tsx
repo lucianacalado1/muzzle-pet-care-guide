@@ -23,7 +23,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container flex items-center justify-center h-16">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/logo-muzzle.jpg" alt="Muzzle Pet Food" className="h-10 rounded-md mix-blend-multiply" />
+          <img src="/logo-muzzle.png" alt="Muzzle Pet Food" className="h-14 w-14 object-contain" />
+
         </Link>
 
         {/* Desktop nav */}

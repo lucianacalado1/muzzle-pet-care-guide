@@ -1,16 +1,16 @@
 import { Sparkles, Bone, Heart, Droplets, Leaf } from "lucide-react";
 
 const benefits = [
-  { icon: Sparkles, title: "Pele e pelagem", desc: "Pele e pelagem mais saudáveis" },
-  { icon: Bone, title: "Articulações", desc: "Suporte para articulações" },
-  { icon: Heart, title: "Mobilidade", desc: "Mais mobilidade" },
-  { icon: Droplets, title: "Nutrição", desc: "Nutrição complementar" },
-  { icon: Leaf, title: "Ingredientes", desc: "Ingredientes naturais" },
-  { icon: Leaf, title: "Sem conservantes", desc: "Snack sem conservantes" },
+  { icon: Sparkles, title: "Rotina equilibrada", desc: "Apoio à rotina alimentar equilibrada" },
+  { icon: Bone, title: "Nutrientes naturais", desc: "Fonte natural de nutrientes" },
+  { icon: Heart, title: "Dia a dia", desc: "Fácil de oferecer no dia a dia" },
+  { icon: Droplets, title: "Ingredientes reais", desc: "Desenvolvido com ingredientes reais" },
+  { icon: Leaf, title: "Sem artificiais", desc: "Sem conservantes ou artificiais" },
+  { icon: Leaf, title: "Cuidado simples", desc: "Cuidado simples e consistente" },
 ];
 
 const BenefitsSection = () => (
-  <section id="beneficios" className="py-14 md:py-20 bg-soft-cream">
+  <section id="beneficios" className="py-8 md:py-12 bg-soft-cream">
     <div className="container">
       <h2
         className="text-3xl md:text-4xl font-bold text-center mb-4"

@@ -8,29 +8,27 @@ const keyPoints = [
 ];
 
 const VeterinarySection = () => (
-  <section className="py-14 md:py-20 bg-background">
+  <section className="py-8 md:py-12 bg-background">
     <div className="container">
-      <div
-        className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start"
-      >
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
         {/* Left column */}
-        <div className="flex-1 max-w-[720px]">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+        <div className="flex-1">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
             Desenvolvido com orientação veterinária
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-base text-muted-foreground mb-6 leading-relaxed">
             As gominhas Muzzle foram formuladas com base em princípios de nutrição funcional para pets, utilizando caldo de ossos concentrado como fonte natural de colágeno.
           </p>
-          <ul className="space-y-4">
+          <ul className="space-y-3">
             {keyPoints.map((point) => (
               <li
                 key={point.text}
                 className="flex items-center gap-3"
               >
-                <div className="w-9 h-9 rounded-full bg-accent/15 flex items-center justify-center shrink-0">
-                  <point.icon className="w-[18px] h-[18px] text-accent" />
+                <div className="w-8 h-8 rounded-full bg-accent/15 flex items-center justify-center shrink-0">
+                  <point.icon className="w-4 h-4 text-accent" />
                 </div>
-                <span className="text-foreground font-medium text-sm md:text-base">
+                <span className="text-foreground font-medium text-sm">
                   {point.text}
                 </span>
               </li>
@@ -39,23 +37,18 @@ const VeterinarySection = () => (
         </div>
 
         {/* Right column – credibility card */}
-        <div
-          className="w-full lg:w-auto lg:min-w-[340px]"
-        >
-          <div className="bg-card rounded-2xl p-7 border border-border shadow-md">
-            <div className="w-14 h-14 rounded-full bg-accent/20 mb-5 flex items-center justify-center mx-auto">
-              <Stethoscope className="w-7 h-7 text-accent" />
-            </div>
-            <div className="flex items-start gap-2.5 mb-4">
+        <div className="w-full lg:w-[320px] shrink-0">
+          <div className="bg-card rounded-2xl p-6 border border-border shadow-md">
+            <div className="flex items-start gap-2.5 mb-3">
               <ShieldCheck className="w-5 h-5 text-primary mt-0.5 shrink-0" />
               <p className="text-foreground font-bold text-sm leading-snug">
                 Receita desenvolvida com orientação de nutricionista veterinária
               </p>
             </div>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-5">
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               As formulações passam por análise criteriosa para garantir segurança, equilíbrio nutricional e benefícios reais para a saúde do seu pet.
             </p>
-            <div className="border-t border-border pt-4">
+            <div className="border-t border-border pt-3">
               <p className="text-xs text-muted-foreground italic">
                 Supervisão técnica: Nutricionista Veterinária
               </p>

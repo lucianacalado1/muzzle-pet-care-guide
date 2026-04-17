@@ -20,18 +20,18 @@ const Index = () => (
     <ProblemSection />
     <ProductSection />
     <BenefitsSection />
-    <CTABlock text="Descubra a dose ideal para o seu pet" />
     <VeterinarySection />
+    <CTABlock text="Descubra a dose ideal para o seu pet" />
     <HowToUseSection />
-    <CTABlock text="Descubra quantas gominhas oferecer ao seu pet" />
     <AuthoritySection />
+    <CTABlock text="Descubra quantas gominhas oferecer ao seu pet" />
     <SocialProofSection />
+    <OurStorySection />
     <CTABlock
       title="Descubra a recomendação ideal para o seu pet"
       text="Responda algumas perguntas rápidas."
       size="medium"
     />
-    <OurStorySection />
     <FAQSection />
     <FinalCTASection />
   </Layout>

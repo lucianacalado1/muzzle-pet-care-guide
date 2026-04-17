@@ -29,7 +29,7 @@ const faqs = [
 
 
 const FAQSection = () =>
-<section className="py-14 md:py-20 bg-secondary">
+<section className="py-8 md:py-12 bg-secondary">
     <div className="container">
       <div
       className="max-w-[800px] mx-auto">

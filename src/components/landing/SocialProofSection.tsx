@@ -54,7 +54,7 @@ const mediaItems = [
 ];
 
 const SocialProofSection = () => (
-  <section className="py-14 md:py-20 bg-soft-cream">
+  <section className="py-8 md:py-12 bg-soft-cream">
     <div className="container">
       <p
         className="text-sm md:text-base text-center text-muted-foreground mb-3 font-medium"
@@ -99,19 +99,19 @@ const SocialProofSection = () => (
       >
         {mediaItems.map((m, i) => (
           <div key={i} className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm flex flex-col">
-            <div className="aspect-video relative bg-muted/30">
+            <div className="relative bg-muted/30 flex items-center justify-center overflow-hidden" style={{maxHeight: "300px"}}>
               {m.type === "video" ? (
-                <video 
-                  src={m.src} 
-                  className="w-full h-full object-cover" 
+                <video
+                  src={m.src}
+                  className="w-full max-h-[300px] object-contain"
                   controls
                   preload="metadata"
                 />
               ) : (
-                <img 
-                  src={m.src} 
+                <img
+                  src={m.src}
                   alt={m.name}
-                  className="w-full h-full object-cover"
+                  className="w-full max-h-[300px] object-contain"
                 />
               )}
             </div>
