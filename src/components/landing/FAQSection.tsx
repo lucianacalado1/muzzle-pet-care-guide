@@ -8,7 +8,7 @@ import {
 const faqs = [
 {
   question: "Isso substitui a alimentação do meu pet?",
-  answer: "Não. As gominhas Muzzle são um suplemento funcional natural que complementa a alimentação diária do seu pet, fornecendo colágeno e nutrientes importantes."
+  answer: "Não. As gominhas Muzzle são um suplemento funcional natural que complementa a alimentação diária do seu pet, fornecendo colagénio e nutrientes importantes."
 },
 {
   question: "Cães e gatos podem consumir?",

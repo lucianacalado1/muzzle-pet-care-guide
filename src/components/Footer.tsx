@@ -1,3 +1,5 @@
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+
 const Footer = () => {
   return (
     <footer className="bg-[hsl(153,33%,22%)] text-primary-foreground py-12">
@@ -7,12 +9,12 @@ const Footer = () => {
             <img src="/logo-muzzle.png" alt="Muzzle Pet Food" className="h-14 w-14 object-contain rounded-full mb-3 mx-auto md:mx-0" />
             <p className="text-sm opacity-80">Suplementação funcional natural para o seu pet.</p>
           </div>
-          <div className="flex gap-6 text-sm opacity-80">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
-              Instagram
+          <div className="flex gap-6 opacity-80">
+            <a href="https://www.instagram.com/muzzlepetfood/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              <FaInstagram size={24} />
             </a>
-            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity">
-              WhatsApp
+            <a href="https://wa.me/351917191314" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              <FaWhatsapp size={24} />
             </a>
           </div>
         </div>

@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npm run *)",
-      "Bash(npx netlify-cli *)"
+      "Bash(npx netlify-cli *)",
+      "Bash(npx gh-pages *)",
+      "Bash(npm install *)"
     ]
   }
 }

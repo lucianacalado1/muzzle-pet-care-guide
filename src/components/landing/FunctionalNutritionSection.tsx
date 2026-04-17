@@ -22,7 +22,7 @@ const FunctionalNutritionSection = () => (
         </p>
 
         <p className="text-muted-foreground leading-relaxed mb-6">
-          Os produtos foram pensados para complementar a alimentação diária com nutrientes importantes, como <strong className="text-foreground">colágeno natural</strong>, que contribui para:
+          Os produtos foram pensados para complementar a alimentação diária com nutrientes importantes, como <strong className="text-foreground">colagénio natural</strong>, que contribui para:
         </p>
 
         <div

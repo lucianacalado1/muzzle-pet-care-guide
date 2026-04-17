@@ -33,10 +33,10 @@ const OurStorySection = () => (
               Durante anos, Lara se alimentou de ração seca e petiscos industrializados, como a maioria dos cães. Mas ao aprofundar os estudos sobre nutrição funcional para pets, surgiu um entendimento importante: a alimentação pode influenciar diretamente a saúde da pele, das articulações, da digestão e do bem-estar geral.
             </p>
             <p>
-              A partir dessa descoberta, iniciou-se uma transição gradual para uma alimentação mais natural, baseada em ingredientes reais e nutrientes funcionais, incluindo suplementação com colágeno natural proveniente de caldo de ossos.
+              A partir dessa descoberta, iniciou-se uma transição gradual para uma alimentação mais natural, baseada em ingredientes reais e nutrientes funcionais, incluindo suplementação com colagénio natural proveniente de caldo de ossos.
             </p>
             <p>
-              Toda a formulação foi desenvolvida com <strong className="text-foreground">nutricionista veterinária</strong>, garantindo equilíbrio nutricional e segurança para os pets.
+              Toda a formulação foi desenvolvida por uma <strong className="text-foreground">nutricionista veterinária</strong>, garantindo equilíbrio nutricional e segurança para os pets.
             </p>
             <p>
               Com o tempo, os resultados começaram a aparecer: mais vitalidade, mais disposição e mais bem-estar.

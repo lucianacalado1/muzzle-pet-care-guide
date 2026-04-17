@@ -1,7 +1,7 @@
 import { Stethoscope, ShieldCheck, Sparkles, Bone, Heart, Leaf } from "lucide-react";
 
 const keyPoints = [
-  { icon: Sparkles, text: "Fonte natural de colágeno" },
+  { icon: Sparkles, text: "Fonte natural de colagénio" },
   { icon: Heart, text: "Apoio à pele e pelagem" },
   { icon: Bone, text: "Suporte às articulações" },
   { icon: Leaf, text: "Nutrição complementar para cães e gatos" },
@@ -17,7 +17,7 @@ const VeterinarySection = () => (
             Desenvolvido com orientação veterinária
           </h2>
           <p className="text-base text-muted-foreground mb-6 leading-relaxed">
-            As gominhas Muzzle foram formuladas com base em princípios de nutrição funcional para pets, utilizando caldo de ossos concentrado como fonte natural de colágeno.
+            As gominhas Muzzle foram formuladas com base em princípios de nutrição funcional para pets, utilizando caldo de ossos concentrado como fonte natural de colagénio.
           </p>
           <ul className="space-y-3">
             {keyPoints.map((point) => (
