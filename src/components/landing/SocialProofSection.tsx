@@ -57,24 +57,18 @@ const SocialProofSection = () => (
   <section className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
       <p
-        className="text-sm md:text-base text-center text-muted-foreground mb-3 font-medium"
-        initial="hidden"
-        whileInView="visible"}
+        className="text-sm md:text-base text-center text-muted-foreground mb-3 font-medium"}
       >
         Mais de 50 pets já experimentaram e aprovaram as gominhas Muzzle.
       </p>
       <h2
-        className="text-3xl md:text-4xl font-bold text-center mb-4"
-        initial="hidden"
-        whileInView="visible"}
+        className="text-3xl md:text-4xl font-bold text-center mb-4"}
       >
         Pets que já experimentaram
       </h2>
 
       <div
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8"
-        initial="hidden"
-        whileInView="visible"}
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8"}
       >
         {testimonials.map((t) => (
           <div
@@ -101,9 +95,7 @@ const SocialProofSection = () => (
       </div>
 
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-12"
-        initial="hidden"
-        whileInView="visible"}
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mt-12"}
       >
         {mediaItems.map((m, i) => (
           <div key={i} className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm flex flex-col">

@@ -11,9 +11,7 @@ const CTABlock = ({ title, text, size = "small" }: CTABlockProps) => (
   <div className={size === "small" ? "py-6 md:py-8" : "py-8 md:py-12"}>
     <div className="container">
       <div
-        className="max-w-xl mx-auto text-center flex flex-col items-center gap-3"
-        initial="hidden"
-        whileInView="visible"}
+        className="max-w-xl mx-auto text-center flex flex-col items-center gap-3"}
       >
         {title && (
           <h3 className={`font-semibold ${size === "medium" ? "text-xl md:text-2xl" : "text-base md:text-lg"}`}>

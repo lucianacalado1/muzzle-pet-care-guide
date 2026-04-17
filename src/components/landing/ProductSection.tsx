@@ -4,9 +4,7 @@ const ProductSection = () => (
   <section id="o-que-sao" className="py-14 md:py-20 bg-background">
     <div className="container">
       <div
-        className="max-w-[720px] mx-auto"
-        initial="hidden"
-        whileInView="visible"}
+        className="max-w-[720px] mx-auto"}
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           O que são as gominhas Muzzle

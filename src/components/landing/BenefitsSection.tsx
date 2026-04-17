@@ -13,16 +13,12 @@ const BenefitsSection = () => (
   <section id="beneficios" className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
       <h2
-        className="text-3xl md:text-4xl font-bold text-center mb-4"
-        initial="hidden"
-        whileInView="visible"}
+        className="text-3xl md:text-4xl font-bold text-center mb-4"}
       >
         Benefícios para o seu pet
       </h2>
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto mt-8"
-        initial="hidden"
-        whileInView="visible"}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto mt-8"}
       >
         {benefits.map((b) => (
           <div

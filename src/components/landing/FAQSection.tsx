@@ -32,9 +32,7 @@ const FAQSection = () =>
 <section className="py-14 md:py-20 bg-secondary">
     <div className="container">
       <div
-      className="max-w-[800px] mx-auto"
-      initial="hidden"
-      whileInView="visible"}>
+      className="max-w-[800px] mx-auto"}>
       
         <div className="text-center mb-6 max-w-[720px] mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">

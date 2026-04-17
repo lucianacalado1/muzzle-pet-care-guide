@@ -4,9 +4,7 @@ const OurStorySection = () => (
   <section id="nossa-historia" className="py-14 md:py-20 bg-background">
     <div className="container">
       <div
-        className="max-w-5xl mx-auto"
-        initial="hidden"
-        whileInView="visible"}
+        className="max-w-5xl mx-auto"}
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           Nossa História

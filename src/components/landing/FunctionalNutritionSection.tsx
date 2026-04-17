@@ -11,9 +11,7 @@ const FunctionalNutritionSection = () => (
   <section id="nutricao-funcional" className="py-14 md:py-20 bg-soft-cream">
     <div className="container">
       <div
-        className="max-w-[720px] mx-auto text-center"
-        initial="hidden"
-        whileInView="visible"}
+        className="max-w-[720px] mx-auto text-center"}
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Nutrição funcional para quem faz parte da família
