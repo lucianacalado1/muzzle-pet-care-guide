@@ -3,14 +3,12 @@ import laraImg from "@/assets/lara.jpeg";
 const OurStorySection = () => (
   <section id="nossa-historia" className="py-8 md:py-12 bg-background">
     <div className="container">
-      <div
-        className="max-w-5xl mx-auto"
-      >
+      <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">
-          Nossa História
+          A nossa história
         </h2>
         <p className="text-center text-accent font-semibold mb-6">
-          Essa é a Lara. A inspiração por trás da Muzzle Pet Food.
+          A Muzzle não nasceu como uma marca. Nasceu de uma inquietação.
         </p>
 
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center mt-8">
@@ -24,25 +22,34 @@ const OurStorySection = () => (
 
           <div className="w-full md:w-3/5 space-y-4 text-muted-foreground leading-relaxed text-[0.95rem]">
             <p>
-              Lara é uma maltês carinhosa que sempre fez parte da família. Com o passar dos anos, começaram a surgir sinais de desconforto em uma das patinhas traseiras. Ela lambia constantemente a região e demonstrava sensibilidade ao toque.
+              Durante anos, a Lara — uma maltês companheira e saudável — viveu dentro do que sempre me disseram ser o "normal": ração seca, petiscos industrializados, uma rotina comum. Até deixar de parecer normal.
             </p>
             <p>
-              Mesmo após consultas veterinárias, nunca houve um diagnóstico totalmente claro para explicar o que ela sentia. Esse cenário despertou uma reflexão importante sobre algo que muitas vezes passa despercebido no dia a dia: <strong className="text-foreground">a alimentação dos pets.</strong>
+              Com o tempo, começaram a surgir sinais: desconforto, sensibilidade, comportamentos que indicavam que algo não estava bem. Procurei respostas, fiz consultas e acompanhamentos — mas nunca houve uma explicação clara. E isso levou-me a questionar o básico.
+            </p>
+            <p className="text-foreground font-medium">
+              Se posso escolher melhor, por que continuar a oferecer o mesmo de sempre?
             </p>
             <p>
-              Durante anos, Lara se alimentou de ração seca e petiscos industrializados, como a maioria dos cães. Mas ao aprofundar os estudos sobre nutrição funcional para pets, surgiu um entendimento importante: a alimentação pode influenciar diretamente a saúde da pele, das articulações, da digestão e do bem-estar geral.
+              Foi assim que comecei a estudar alimentação e a perceber o impacto real que ela tem na saúde dos animais — não apenas a nível físico, mas também digestivo, inflamatório e geral.
             </p>
             <p>
-              A partir dessa descoberta, iniciou-se uma transição gradual para uma alimentação mais natural, baseada em ingredientes reais e nutrientes funcionais, incluindo suplementação com colagénio natural proveniente de caldo de ossos.
+              Mas encontrei um obstáculo: fazer tudo de forma completa, com qualidade e dentro das exigências, é complexo e pouco acessível para a maioria das pessoas. Foi nesse momento que a Muzzle começou a ganhar forma.
             </p>
             <p>
-              Toda a formulação foi desenvolvida por uma <strong className="text-foreground">nutricionista veterinária</strong>, garantindo equilíbrio nutricional e segurança para os pets.
+              Não como mais uma marca de alimentação pet, mas como uma abordagem mais simples e consciente. Decidimos focar no essencial.
             </p>
             <p>
-              Com o tempo, os resultados começaram a aparecer: mais vitalidade, mais disposição e mais bem-estar.
+              Criar algo prático, versátil e realmente útil no dia a dia — sem complicar a rotina dos tutores. Assim nasceram as nossas gomas de colagénio à base de caldo de ossos.
+            </p>
+            <p>
+              Um alimento tradicional, conhecido há gerações, adaptado para o presente: fácil de servir, nutritivo e pensado para complementar a alimentação de forma natural.
+            </p>
+            <p>
+              A Muzzle ainda está no início. Produção artesanal, testes e evolução constante. Mas a base mantém-se a mesma: Tudo começou com a Lara. E continua a ser por ela.
             </p>
             <p className="text-foreground font-semibold italic">
-              Foi dessa experiência — inspirada pela Lara — que nasceu a Muzzle Pet Food.
+              Cuidado real com quem não fala, mas sente.
             </p>
           </div>
         </div>

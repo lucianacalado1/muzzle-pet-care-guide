@@ -30,7 +30,7 @@ const HowToUseSection = () => (
             <UtensilsCrossed className="w-7 h-7 text-accent" />
           </div>
           <h3 className="text-lg font-bold mb-2">Topping</h3>
-          <p className="text-muted-foreground text-sm">Derreter alguns segundos e servir morno sobre a refeição</p>
+          <p className="text-muted-foreground text-sm">Oferecer o caldo derretido morno ou regar por cima de uma refeição</p>
         </div>
       </div>
     </div>
