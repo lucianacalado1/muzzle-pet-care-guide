@@ -5,11 +5,11 @@ import productHero from "@/assets/product-hero.png";
 const HeroSection = () =>
 <section className="relative overflow-hidden pb-8 md:pb-12 bg-white">
     <div className="container pt-2">
-      <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-        {/* Text + CTA (desktop: all together, mobile: split around image) */}
-        <div
-        className="flex-1 text-center md:text-left max-w-lg mx-auto md:mx-0">
-        
+      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+
+        {/* Text column — order-1 on mobile and desktop */}
+        <div className="order-1 flex-1 text-center md:text-left max-w-lg mx-auto md:mx-0">
+
           <div className="flex flex-wrap items-center gap-3 mb-6 justify-center">
             <span className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground px-5 py-1.5 rounded-full text-sm font-semibold whitespace-nowrap">
               <PawPrint className="w-4 h-4" /> 100% Natural
@@ -18,6 +18,7 @@ const HeroSection = () =>
               <PawPrint className="w-4 h-4" /> Receita desenvolvida com orientação veterinária
             </span>
           </div>
+
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Uma nova forma de cuidar do seu pet{" "}
             <span className="text-accent italic">simples, natural e funcional</span>
@@ -29,38 +30,25 @@ const HeroSection = () =>
             Acreditamos que cuidar da saúde do pet não precisa ser complicado, artificial ou agressivo.
           </p>
 
-          {/* Product Image - mobile only (before CTA) */}
-          <div
-          className="flex md:hidden justify-center mb-8">
-          
-            <img
-            src={productHero}
-            alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
-            className="w-[480px] object-contain drop-shadow-2xl mix-blend-multiply" />
-          
-          </div>
-
           <div className="w-full">
             <Link
             to="/quiz"
             className="inline-flex justify-center items-center gap-2 bg-primary text-primary-foreground px-8 h-[52px] md:h-14 w-full rounded-2xl text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg">
-            
               <PawPrint className="w-5 h-5" />
               Descobrir a dose ideal para meu pet
             </Link>
           </div>
         </div>
 
-        {/* Product Image - desktop only */}
-        <div
-        className="hidden md:flex flex-1 justify-center">
-        
+        {/* Image column — order-2 on mobile, natural on desktop */}
+        <div className="order-2 flex justify-center md:flex-1">
           <img
-          src={productHero}
-          alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
-          className="w-[600px] object-contain drop-shadow-2xl mix-blend-multiply" />
-        
+            src={productHero}
+            alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
+            className="w-[300px] md:w-[600px] object-contain drop-shadow-2xl mix-blend-multiply"
+          />
         </div>
+
       </div>
     </div>
   </section>;

@@ -99,21 +99,8 @@ const SocialProofSection = () => (
       >
         {mediaItems.map((m, i) => (
           <div key={i} className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm flex flex-col">
-            <div className="relative bg-muted/30 flex items-center justify-center overflow-hidden" style={{maxHeight: "300px"}}>
-              {m.type === "video" ? (
-                <video
-                  src={m.src}
-                  className="w-full max-h-[300px] object-contain"
-                  controls
-                  preload="metadata"
-                />
-              ) : (
-                <img
-                  src={m.src}
-                  alt={m.name}
-                  className="w-full max-h-[300px] object-contain"
-                />
-              )}
+            <div className="w-full max-h-[300px] h-[200px] bg-muted/50 flex items-center justify-center rounded-lg">
+              <p className="text-muted-foreground text-sm">Vídeo em breve 🐾</p>
             </div>
             <div className="p-5 flex-1 bg-card">
               <p className="font-bold text-foreground text-base mb-1">
