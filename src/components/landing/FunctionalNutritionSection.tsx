@@ -18,7 +18,7 @@ const FunctionalNutritionSection = () => (
         </h2>
 
         <p className="text-muted-foreground leading-relaxed mb-6">
-          A Muzzle nasceu com um propósito simples: ajudar tutores a oferecer uma nutrição mais natural, funcional e consciente para seus pets.
+          A Muzzle nasceu com um propósito simples: ajudar tutores a oferecer uma nutrição mais natural, funcional e consciente para os seus Focinhos.
         </p>
 
         <p className="text-muted-foreground leading-relaxed mb-6">

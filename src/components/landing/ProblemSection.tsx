@@ -14,11 +14,11 @@ const ProblemSection = () => {
     <section className="py-8 lg:py-12 bg-soft-cream">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">
-          Você percebe algum desses sinais no seu pet?
+          Você percebe algum desses sinais no seu Focinho?
         </h2>
 
         <p className="text-center text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-          Pequenos sinais podem indicar que o organismo do seu pet precisa de suporte nutricional.
+          Pequenos sinais podem indicar que o organismo do seu Focinho precisa de suporte nutricional.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">

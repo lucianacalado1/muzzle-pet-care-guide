@@ -10,7 +10,7 @@ const ProductSection = () => (
           Mais do que um snack — um ritual de cuidado diário
         </h2>
         <p className="text-lg text-muted-foreground text-center mb-6 leading-relaxed">
-          As gominhas Muzzle são uma forma prática de incluir ingredientes naturais na rotina do seu pet — com sabor, simplicidade e consistência. Feitas a partir de caldo de ossos concentrado, trazem nutrição real sem complicação.
+          As gominhas Muzzle são uma forma prática de incluir ingredientes naturais na rotina do seu Focinho — com sabor, simplicidade e consistência. Feitas a partir de caldo de ossos concentrado, trazem nutrição real sem complicação.
         </p>
       </div>
     </div>

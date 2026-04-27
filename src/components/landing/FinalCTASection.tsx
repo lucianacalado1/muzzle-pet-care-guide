@@ -8,7 +8,7 @@ const FinalCTASection = () => (
         className="max-w-[720px] mx-auto text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-          Descubra a dose ideal para o seu pet
+          Descubra a dose ideal para o seu Focinho
         </h2>
         <p className="text-primary-foreground/80 mb-6">
           Leva menos de 1 minuto.
@@ -22,7 +22,7 @@ const FinalCTASection = () => (
             Descobrir a dose ideal
           </Link>
           <p className="text-sm text-primary-foreground/60">
-            Leva menos de 30 segundos para descobrir a dose ideal para o seu pet.
+            Leva menos de 30 segundos para descobrir a dose ideal para o seu Focinho.
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <img src={`${import.meta.env.BASE_URL}logo-muzzle.png`} alt="Muzzle Pet Food" className="h-14 w-14 object-contain rounded-full mb-3 mx-auto md:mx-0" />
-            <p className="text-sm opacity-80">Suplementação funcional natural para o seu pet.</p>
+            <p className="text-sm opacity-80">Suplementação funcional natural para o seu Focinho.</p>
           </div>
           <div className="flex gap-6 opacity-80">
             <a href="https://www.instagram.com/muzzlepetfood/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">

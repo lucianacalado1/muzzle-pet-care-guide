@@ -7,15 +7,15 @@ import {
 
 const faqs = [
 {
-  question: "Isso substitui a alimentação do meu pet?",
-  answer: "Não. As gominhas Muzzle são um suplemento funcional natural que complementa a alimentação diária do seu pet, fornecendo colagénio e nutrientes importantes."
+  question: "Isso substitui a alimentação do meu Focinho?",
+  answer: "Não. As gominhas Muzzle são um suplemento funcional natural que complementa a alimentação diária do seu Focinho, fornecendo colagénio e nutrientes importantes."
 },
 {
   question: "Cães e gatos podem consumir?",
   answer: "Sim. A recomendação de consumo varia de acordo com o peso do animal e pode ser calculada através do nosso guia de dose ideal."
 },
 {
-  question: "Como devo oferecer ao meu pet?",
+  question: "Como devo oferecer ao meu Focinho?",
   answer: "As gominhas podem ser oferecidas como snack, congeladas ou levemente aquecidas como topping sobre a refeição."
 },
 {

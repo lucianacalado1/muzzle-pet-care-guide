@@ -20,14 +20,14 @@ const HeroSection = () =>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            Uma nova forma de cuidar do seu pet{" "}
+            Uma nova forma de cuidar do seu Focinho{" "}
             <span className="text-accent italic">simples, natural e funcional</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-4">
             Desenvolvido a partir de caldo de ossos, ingrediente tradicionalmente valorizado pela sua riqueza nutricional.
           </p>
           <p className="text-base text-muted-foreground mb-8 max-w-lg md:mx-0 mx-auto">
-            Acreditamos que cuidar da saúde do pet não precisa ser complicado, artificial ou agressivo.
+            Acreditamos que cuidar da saúde do Focinho não precisa ser complicado, artificial ou agressivo.
           </p>
 
           <div className="w-full">
@@ -35,7 +35,7 @@ const HeroSection = () =>
             to="/quiz"
             className="inline-flex justify-center items-center gap-2 bg-primary text-primary-foreground px-8 h-[52px] md:h-14 w-full rounded-2xl text-lg font-semibold hover:opacity-90 transition-opacity shadow-lg">
               <PawPrint className="w-5 h-5" />
-              Descobrir a dose ideal para meu pet
+              Descobrir a dose ideal para o meu Focinho
             </Link>
           </div>
         </div>
