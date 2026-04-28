@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-foreground/20 text-center text-xs opacity-60">
-          © {new Date().getFullYear()} Muzzle Pet Food. Todos os direitos reservados.
+          © {new Date().getFullYear()} Muzzle Pet Food.  Todos os direitos reservados.
         </div>
       </div>
     </footer>
