@@ -27,7 +27,7 @@ const HeroSection = () =>
             Desenvolvido a partir de caldo de ossos, ingrediente tradicionalmente valorizado pela sua riqueza nutricional.
           </p>
           <p className="text-base text-muted-foreground mb-8 max-w-lg md:mx-0 mx-auto">
-            Acreditamos que cuidar da saúde do Focinho não precisa ser complicado, artificial ou agressivo.
+            Acreditamos que cuidar da saúde dos nossos focinhos não precisa ser complicado, artificial ou agressivo.
           </p>
 
           <div className="w-full">

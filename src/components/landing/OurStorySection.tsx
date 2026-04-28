@@ -37,7 +37,7 @@ const OurStorySection = () => (
               Mas encontrei um obstáculo: fazer tudo de forma completa, com qualidade e dentro das exigências, é complexo e pouco acessível para a maioria das pessoas. Foi nesse momento que a Muzzle começou a ganhar forma.
             </p>
             <p>
-              Não como mais uma marca de alimentação pet, mas como uma abordagem mais simples e consciente. Decidimos focar no essencial.
+              Não como mais uma marca de alimentação dos focinhos, mas como uma abordagem mais simples e consciente. Decidimos focar no essencial.
             </p>
             <p>
               Criar algo prático, versátil e realmente útil no dia a dia — sem complicar a rotina dos tutores. Assim nasceram as nossas gomas de colagénio à base de caldo de ossos.

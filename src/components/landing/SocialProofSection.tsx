@@ -59,12 +59,12 @@ const SocialProofSection = () => (
       <p
         className="text-sm md:text-base text-center text-muted-foreground mb-3 font-medium"
       >
-        Mais de 50 pets já experimentaram e aprovaram as gominhas Muzzle.
+        Mais de 50 Focinhos já experimentaram e aprovaram as gominhas Muzzle.
       </p>
       <h2
         className="text-3xl md:text-4xl font-bold text-center mb-4"
       >
-        Pets que já experimentaram
+        Focinhos que já experimentaram
       </h2>
 
       <div

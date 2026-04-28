@@ -24,11 +24,11 @@ const Index = () => (
     <CTABlock text="Descubra a dose ideal para o seu pet" />
     <HowToUseSection />
     <AuthoritySection />
-    <CTABlock text="Descubra quantas gominhas oferecer ao seu pet" />
+    <CTABlock text="Descubra quantas gominhas oferecer ao seu Focinho" />
     <SocialProofSection />
     <OurStorySection />
     <CTABlock
-      title="Descubra a recomendação ideal para o seu pet"
+      title="Descubra a recomendação ideal para o seu Focinho"
       text="Responda algumas perguntas rápidas."
       size="medium"
     />
