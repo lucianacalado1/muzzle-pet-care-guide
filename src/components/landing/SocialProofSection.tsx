@@ -28,29 +28,15 @@ const mediaItems = [
     name: "Cookie",
     pet: "",
     text: "Cookie aprovou o novo snack de primeira",
-    src: "/videos/video-4.mp4",
+    src: "https://www.youtube.com/embed/wPovwczbx5M",
   },
   {
     type: "video",
     name: "Testando com gatos",
     pet: "",
     text: "Um aprovou de primeira. Outro precisou de adaptação — algo comum com gatos.",
-    src: "/videos/video-1.mp4",
+    src: "https://www.youtube.com/embed/2ve4Y5zAitg",
   },
-  {
-    type: "video",
-    name: "Thor",
-    pet: "Labrador",
-    text: "Aceitou como snack logo na primeira tentativa.",
-    src: "/videos/video-2.mp4",
-  },
-  {
-    type: "video",
-    name: "Zeus",
-    pet: "aprovou de primeira 🐾",
-    text: "Dos 3 gatinhos que testaram, apenas um não aceitou de imediato.",
-    src: "/videos/video-3.mp4",
-  }
 ];
 
 const SocialProofSection = () => (
@@ -99,9 +85,14 @@ const SocialProofSection = () => (
       >
         {mediaItems.map((m, i) => (
           <div key={i} className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm flex flex-col">
-            <div className="w-full max-h-[300px] h-[200px] bg-muted/50 flex items-center justify-center rounded-lg">
-              <p className="text-muted-foreground text-sm">Vídeo em breve 🐾</p>
-            </div>
+            <iframe
+              src={m.src}
+              width="100%"
+              height="300"
+              frameBorder="0"
+              allowFullScreen
+              title="Muzzle video"
+            />
             <div className="p-5 flex-1 bg-card">
               <p className="font-bold text-foreground text-base mb-1">
                 {m.name} {m.pet && <span className="font-normal text-muted-foreground text-sm">— {m.pet}</span>}
