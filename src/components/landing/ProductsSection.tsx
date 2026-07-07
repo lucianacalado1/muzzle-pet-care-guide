@@ -1,4 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
+import productHero from "@/assets/product-hero.png";
 
 const products = [
   {
@@ -8,6 +9,7 @@ const products = [
     badge: "Mais popular",
     badgeClass: "bg-accent text-accent-foreground",
     highlight: false,
+    image: productHero,
     whatsappUrl:
       "https://wa.me/351917191314?text=Olá!%20Gostaria%20de%20encomendar%20a%20Embalagem%20Individual%20das%20gominhas%20Muzzle.",
   },
@@ -19,6 +21,7 @@ const products = [
     badge: "NOVIDADE",
     badgeClass: "bg-primary text-primary-foreground",
     highlight: true,
+    image: "/produto-economico.jpg",
     whatsappUrl:
       "https://wa.me/351917191314?text=Olá!%20Gostaria%20de%20encomendar%20o%20Formato%20Económico%20474g%20das%20gominhas%20Muzzle.",
   },
@@ -46,6 +49,12 @@ const ProductsSection = () => (
             >
               {product.badge}
             </span>
+
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-48 object-contain rounded-xl mb-4"
+            />
 
             <h3 className="text-xl font-bold text-foreground mt-4 mb-2">
               {product.name}
