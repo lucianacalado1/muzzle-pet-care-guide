@@ -40,8 +40,8 @@ const ProductsSection = () => (
             key={product.name}
             className={
               product.highlight
-                ? "relative bg-card rounded-2xl p-8 border-4 border-primary shadow-xl flex flex-col"
-                : "relative bg-card rounded-2xl p-8 border border-border shadow-sm flex flex-col"
+                ? "relative bg-card rounded-2xl p-6 border-4 border-primary shadow-xl flex flex-col"
+                : "relative bg-card rounded-2xl p-6 border border-border shadow-sm flex flex-col"
             }
           >
             <span
@@ -53,36 +53,34 @@ const ProductsSection = () => (
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-52 object-contain bg-soft-cream rounded-xl mb-4"
+              className="w-full h-44 object-contain bg-soft-cream rounded-xl mb-4 p-3"
             />
 
-            <h3 className="text-xl font-bold text-foreground mt-4 mb-2">
+            <h3 className="text-xl font-bold text-foreground mt-4 mb-1">
               {product.name}
             </h3>
-            <p className="text-muted-foreground text-sm mb-6">
+            <p className="text-muted-foreground text-sm mb-3">
               {product.description}
             </p>
 
-            <div className="mt-auto">
-              <p className="text-3xl font-bold text-foreground mb-1">
-                {product.price}
+            <p className="text-3xl font-bold text-foreground mb-1">
+              {product.price}
+            </p>
+            {product.savings && (
+              <p className="text-sm text-primary font-medium mb-4">
+                {product.savings}
               </p>
-              {product.savings && (
-                <p className="text-sm text-primary font-medium mb-4">
-                  {product.savings}
-                </p>
-              )}
+            )}
 
-              <a
-                href={product.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex justify-center items-center gap-2 bg-green-600 text-white px-6 h-[52px] w-full rounded-2xl text-base font-semibold hover:opacity-90 transition-opacity shadow-lg"
-              >
-                <FaWhatsapp size={20} />
-                Encomendar via WhatsApp
-              </a>
-            </div>
+            <a
+              href={product.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-auto inline-flex justify-center items-center gap-2 bg-green-600 text-white px-6 h-[52px] w-full rounded-2xl text-base font-semibold hover:opacity-90 transition-opacity shadow-lg"
+            >
+              <FaWhatsapp size={20} />
+              Encomendar via WhatsApp
+            </a>
           </div>
         ))}
       </div>
