@@ -50,11 +50,13 @@ const ProductsSection = () => (
               {product.badge}
             </span>
 
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-44 object-contain bg-soft-cream rounded-xl mb-4 p-3"
-            />
+            <div className="h-64 rounded-xl mb-5 flex items-center justify-center">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="h-full w-auto object-contain"
+              />
+            </div>
 
             <h3 className="text-xl font-bold text-foreground mt-4 mb-1">
               {product.name}
