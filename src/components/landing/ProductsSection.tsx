@@ -50,29 +50,35 @@ const ProductsSection = () => (
               {product.badge}
             </span>
 
-            <div className="h-64 rounded-xl mb-5 flex items-center justify-center">
+            <div className="h-64 bg-white rounded-xl mb-5 flex items-center justify-center">
               <img
                 src={product.image}
                 alt={product.name}
-                className="h-full w-auto object-contain"
+                className={
+                  product.name === "Embalagem Individual"
+                    ? "h-full w-auto object-contain scale-110"
+                    : "h-full w-auto object-contain"
+                }
               />
             </div>
 
-            <h3 className="text-xl font-bold text-foreground mt-4 mb-1">
-              {product.name}
-            </h3>
-            <p className="text-muted-foreground text-sm mb-3">
-              {product.description}
-            </p>
-
-            <p className="text-3xl font-bold text-foreground mb-1">
-              {product.price}
-            </p>
-            {product.savings && (
-              <p className="text-sm text-primary font-medium mb-4">
-                {product.savings}
+            <div className="text-center">
+              <h3 className="text-xl font-bold text-foreground mt-4 mb-1">
+                {product.name}
+              </h3>
+              <p className="text-muted-foreground text-sm mb-3">
+                {product.description}
               </p>
-            )}
+
+              <p className="text-3xl font-bold text-foreground mb-1">
+                {product.price}
+              </p>
+              {product.savings && (
+                <p className="text-sm text-primary font-medium mb-4">
+                  {product.savings}
+                </p>
+              )}
+            </div>
 
             <a
               href={product.whatsappUrl}
