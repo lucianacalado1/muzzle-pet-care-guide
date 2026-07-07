@@ -53,7 +53,7 @@ const ProductsSection = () => (
             <img
               src={product.image}
               alt={product.name}
-              className="w-full h-48 object-contain rounded-xl mb-4"
+              className="w-full h-64 object-cover rounded-xl mb-4"
             />
 
             <h3 className="text-xl font-bold text-foreground mt-4 mb-2">
