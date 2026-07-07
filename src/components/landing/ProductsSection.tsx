@@ -41,7 +41,7 @@ const ProductsSection = () => (
             className={
               product.highlight
                 ? "relative bg-card rounded-2xl p-6 border-4 border-primary shadow-xl flex flex-col"
-                : "relative bg-card rounded-2xl p-6 border border-border shadow-sm flex flex-col"
+                : "relative bg-card rounded-2xl p-6 border-4 border-primary shadow-sm flex flex-col"
             }
           >
             <span
@@ -50,13 +50,13 @@ const ProductsSection = () => (
               {product.badge}
             </span>
 
-            <div className="h-64 bg-white rounded-xl mb-5 flex items-center justify-center">
+            <div className="h-64 bg-white rounded-xl mb-5 flex items-center justify-center overflow-hidden">
               <img
                 src={product.image}
                 alt={product.name}
                 className={
                   product.name === "Embalagem Individual"
-                    ? "h-full w-auto object-contain scale-110"
+                    ? "h-full w-auto object-contain scale-125"
                     : "h-full w-auto object-contain"
                 }
               />
