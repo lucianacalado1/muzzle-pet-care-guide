@@ -25,9 +25,9 @@ const testimonials = [
 const mediaItems = [
   {
     type: "video",
-    name: "Cookie",
+    name: "Mintu",
     pet: "",
-    text: "Cookie aprovou o novo snack de primeira",
+    text: "Mintu aprovou o novo snack de primeira",
     src: "https://www.youtube.com/embed/wPovwczbx5M",
   },
   {

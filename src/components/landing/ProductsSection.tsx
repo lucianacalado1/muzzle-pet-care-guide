@@ -40,8 +40,8 @@ const ProductsSection = () => (
             key={product.name}
             className={
               product.highlight
-                ? "relative bg-card rounded-2xl p-6 border-4 border-primary shadow-xl flex flex-col"
-                : "relative bg-card rounded-2xl p-6 border-4 border-primary shadow-sm flex flex-col"
+                ? "relative bg-white rounded-2xl p-6 border-4 border-accent shadow-xl flex flex-col"
+                : "relative bg-white rounded-2xl p-6 border-4 border-primary shadow-sm flex flex-col"
             }
           >
             <span
