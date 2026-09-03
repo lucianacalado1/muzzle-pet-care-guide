@@ -17,11 +17,14 @@ const HeroSection = () =>
             <span className="inline-flex items-center gap-2 bg-[hsl(39,50%,92%)] text-[hsl(150,30%,25%)] px-5 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">
               <PawPrint className="w-4 h-4" /> Receita desenvolvida com orientação veterinária
             </span>
+            <span className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground px-5 py-1.5 rounded-full text-sm font-semibold whitespace-nowrap">
+              <PawPrint className="w-4 h-4" /> Produzido em Portugal
+            </span>
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             Uma nova forma de cuidar do seu Focinho{" "}
-            <span className="text-accent italic">simples, natural e funcional</span>
+            <span className="text-accent italic">simples, natural e rico em colagénio</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-4">
             Desenvolvido a partir de caldo de ossos, ingrediente tradicionalmente valorizado pela sua riqueza nutricional.
@@ -44,7 +47,7 @@ const HeroSection = () =>
         <div className="order-2 flex justify-center md:flex-1">
           <img
             src={productHero}
-            alt="Muzzle Pet Food - Gominhas naturais de caldo de ossos"
+            alt="Muzzle Pet Food - Gomas naturais de caldo de ossos"
             className="w-[300px] md:w-[600px] object-contain drop-shadow-2xl mix-blend-multiply"
           />
         </div>

@@ -7,18 +7,18 @@ const pillars = [
   { icon: Leaf, label: "Apoio nutricional diário" },
 ];
 
-const FunctionalNutritionSection = () => (
-  <section id="nutricao-funcional" className="py-8 md:py-12 bg-soft-cream">
+const ComoFazemosSection = () => (
+  <section id="como-fazemos" className="py-8 md:py-12 bg-soft-cream">
     <div className="container">
       <div
         className="max-w-[720px] mx-auto text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Nutrição funcional para quem faz parte da família
+          Como fazemos as nossas gomas de caldo de ossos
         </h2>
 
         <p className="text-muted-foreground leading-relaxed mb-6">
-          A Muzzle nasceu com um propósito simples: ajudar tutores a oferecer uma nutrição mais natural, funcional e consciente para os seus Focinhos.
+          A Muzzle nasceu com um propósito simples: transformar caldo de ossos concentrado em gomas naturais e conscientes para os Focinhos.
         </p>
 
         <p className="text-muted-foreground leading-relaxed mb-6">
@@ -49,4 +49,4 @@ const FunctionalNutritionSection = () => (
   </section>
 );
 
-export default FunctionalNutritionSection;
+export default ComoFazemosSection;

@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "O que são as gominhas", href: "#o-que-sao" },
+  { label: "O que são as gomas", href: "#o-que-sao" },
   { label: "Benefícios", href: "#beneficios" },
   { label: "Como usar", href: "#como-usar" },
   { label: "Nossa História", href: "#nossa-historia" },
-  { label: "Nutrição Funcional", href: "#nutricao-funcional" },
+  { label: "Como Fazemos", href: "#como-fazemos" },
 ];
 
 const Header = () => {

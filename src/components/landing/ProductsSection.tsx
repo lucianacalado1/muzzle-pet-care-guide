@@ -11,7 +11,7 @@ const products = [
     highlight: false,
     image: productHero,
     whatsappUrl:
-      "https://wa.me/351917191314?text=Olá!%20Gostaria%20de%20encomendar%20a%20Embalagem%20Individual%20das%20gominhas%20Muzzle.",
+      "https://wa.me/351917191314?text=Olá!%20Gostaria%20de%20encomendar%20a%20Embalagem%20Individual%20das%20gomas%20Muzzle%20(5,90€).",
   },
   {
     name: "Formato Económico",
@@ -23,7 +23,7 @@ const products = [
     highlight: true,
     image: "/produto-economico.jpg",
     whatsappUrl:
-      "https://wa.me/351917191314?text=Olá!%20Gostaria%20de%20encomendar%20o%20Formato%20Económico%20474g%20das%20gominhas%20Muzzle.",
+      "https://wa.me/351917191314?text=Olá!%20Gostaria%20de%20encomendar%20o%20Formato%20Económico%20474g%20das%20gomas%20Muzzle%20(14,20€).",
   },
 ];
 

@@ -8,7 +8,7 @@ import {
 const faqs = [
 {
   question: "Isso substitui a alimentação do meu Focinho?",
-  answer: "Não. As gominhas Muzzle são um suplemento funcional natural que complementa a alimentação diária do seu Focinho, fornecendo colagénio e nutrientes importantes."
+  answer: "Não. As gomas de caldo de ossos Muzzle são um suplemento natural que complementa a alimentação diária do seu Focinho, fornecendo colagénio e nutrientes importantes."
 },
 {
   question: "Cães e gatos podem consumir?",
@@ -16,7 +16,7 @@ const faqs = [
 },
 {
   question: "Como devo oferecer ao meu Focinho?",
-  answer: "As gominhas podem ser oferecidas como snack, congeladas ou levemente aquecidas como topping sobre a refeição."
+  answer: "As gomas podem ser oferecidas como snack, congeladas ou levemente aquecidas como topping sobre a refeição."
 },
 {
   question: "Como conservar o produto?",
@@ -24,7 +24,7 @@ const faqs = [
 },
 {
   question: "Os ingredientes são naturais?",
-  answer: "Sim. As gominhas são feitas a partir de caldo de ossos concentrado e não contêm conservantes artificiais."
+  answer: "Sim. As gomas são feitas a partir de caldo de ossos concentrado e não contêm conservantes artificiais."
 }];
 
 
@@ -39,7 +39,7 @@ const FAQSection = () =>
             Perguntas frequentes
           </h2>
           <p className="text-lg text-muted-foreground mb-6">
-            Tire as principais dúvidas sobre as gominhas funcionais Muzzle.
+            Tire as principais dúvidas sobre as gomas de caldo de ossos Muzzle.
           </p>
         </div>
 

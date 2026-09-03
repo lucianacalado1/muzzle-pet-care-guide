@@ -7,8 +7,8 @@ Site educativo e de conversão para a marca Muzzle Pet Food, com design clean, m
 ## Páginas e Funcionalidades
 
 ### 1. Landing Page
-- **Hero Section**: Fundo bege com título grande "Gominhas Naturais Muzzle", subtítulo sobre suplementação funcional, e botão CTA verde "Descobrir a dose ideal para meu pet" que leva ao quiz
-- **O que são as Gominhas**: Seção explicativa sobre snacks naturais de gelatina feitos de caldo de ossos concentrado
+- **Hero Section**: Fundo bege com título grande "Gomas Naturais Muzzle", subtítulo sobre suplementação funcional, e botão CTA verde "Descobrir a dose ideal para meu pet" que leva ao quiz
+- **O que são as Gomas**: Seção explicativa sobre snacks naturais de gelatina feitos de caldo de ossos concentrado
 - **Benefícios**: Cards com ícones mostrando benefícios (pele/pelo, articulações, mobilidade, digestão)
 - **Como Usar**: 3 formas de uso (Snack descongelado, Geladinho congelado, Topping na refeição) + instruções de conservação
 - **Prova Social**: Depoimentos de tutores com fotos e avaliações

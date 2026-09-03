@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Luna",
     pet: "Golden Retriever",
-    text: "A Luna adora as gominhas! Desde que começou, o pelo ficou muito mais brilhante e macio.",
+    text: "A Luna adora as gomas! Desde que começou, o pelo ficou muito mais brilhante e macio.",
     emoji: "🐕",
   },
   {
@@ -17,7 +17,7 @@ const testimonials = [
   {
     name: "Thor",
     pet: "Labrador",
-    text: "Com 9 anos, o Thor estava com dificuldade para se levantar. As gominhas ajudaram demais na mobilidade.",
+    text: "Com 9 anos, o Thor estava com dificuldade para se levantar. As gomas ajudaram demais na mobilidade.",
     emoji: "🐕‍🦺",
   },
 ];
@@ -45,7 +45,7 @@ const SocialProofSection = () => (
       <p
         className="text-sm md:text-base text-center text-muted-foreground mb-3 font-medium"
       >
-        Mais de 50 Focinhos já experimentaram e aprovaram as gominhas Muzzle.
+        Mais de 50 Focinhos já experimentaram e aprovaram as gomas Muzzle.
       </p>
       <h2
         className="text-3xl md:text-4xl font-bold text-center mb-4"

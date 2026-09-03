@@ -15,7 +15,7 @@ const StorageSection = () => (
       >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Como conservar</h2>
         <p className="text-lg text-muted-foreground text-center mb-6">
-          Recomendações simples para garantir a qualidade das gominhas.
+          Recomendações simples para garantir a qualidade das gomas.
         </p>
         <div className="bg-card rounded-2xl p-6 border border-border space-y-4 mt-8">
           {items.map((item) => (

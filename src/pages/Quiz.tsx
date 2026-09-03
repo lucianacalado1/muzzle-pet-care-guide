@@ -274,7 +274,7 @@ const Quiz = () => {
                     </div>
                     <h2 className="text-2xl font-bold text-center">Receba a recomendação ideal para o seu pet</h2>
                     <p className="text-muted-foreground text-sm text-center">
-                      Descubra quantas gominhas oferecer por dia e receba dicas de nutrição funcional para pets.
+                      Descubra quantas gomas oferecer por dia e receba dicas de nutrição para pets.
                     </p>
                     <Input
                       type="email"

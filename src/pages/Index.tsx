@@ -5,6 +5,7 @@ import ProductSection from "@/components/landing/ProductSection";
 import ProductsSection from "@/components/landing/ProductsSection";
 import BenefitsSection from "@/components/landing/BenefitsSection";
 import VeterinarySection from "@/components/landing/VeterinarySection";
+import ComoFazemosSection from "@/components/landing/ComoFazemosSection";
 import HowToUseSection from "@/components/landing/HowToUseSection";
 
 import AuthoritySection from "@/components/landing/AuthoritySection";
@@ -23,10 +24,11 @@ const Index = () => (
     <ProductsSection />
     <BenefitsSection />
     <VeterinarySection />
+    <ComoFazemosSection />
     <CTABlock text="Descubra a dose ideal para o seu pet" />
     <HowToUseSection />
     <AuthoritySection />
-    <CTABlock text="Descubra quantas gominhas oferecer ao seu Focinho" />
+    <CTABlock text="Descubra quantas gomas oferecer ao seu Focinho" />
     <SocialProofSection />
     <OurStorySection />
     <CTABlock

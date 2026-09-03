@@ -17,7 +17,7 @@ const VeterinarySection = () => (
             Desenvolvido com orientação veterinária
           </h2>
           <p className="text-base text-muted-foreground mb-6 leading-relaxed">
-            As gominhas Muzzle foram formuladas com base em princípios de nutrição funcional para Focinhos, utilizando caldo de ossos concentrado como fonte natural de colagénio.
+            As gomas de caldo de ossos Muzzle são formuladas com base em princípios de nutrição para Focinhos, utilizando caldo de ossos concentrado como fonte natural de colagénio.
           </p>
           <ul className="space-y-3">
             {keyPoints.map((point) => (

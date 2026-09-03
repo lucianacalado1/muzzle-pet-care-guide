@@ -22,25 +22,25 @@ const OurStorySection = () => (
 
           <div className="w-full md:w-3/5 space-y-4 text-muted-foreground leading-relaxed text-[0.95rem]">
             <p>
-              Durante anos, a Lara — uma maltês companheira e saudável — viveu dentro do que sempre me disseram ser o "normal": ração seca, petiscos industrializados, uma rotina comum. Até deixar de parecer normal.
+              Durante anos, a Lara — uma maltês companheira e saudável — viveu dentro do que se costuma chamar de "normal": ração seca, petiscos industrializados, uma rotina comum. Até deixar de parecer normal.
             </p>
             <p>
-              Com o tempo, começaram a surgir sinais: desconforto, sensibilidade, comportamentos que indicavam que algo não estava bem. Procurei respostas, fiz consultas e acompanhamentos — mas nunca houve uma explicação clara. E isso levou-me a questionar o básico.
+              Com o tempo, começaram a surgir sinais: desconforto, sensibilidade, comportamentos que indicavam que algo não estava bem. A família da Lara procurou respostas, fez consultas e acompanhamentos — mas nunca houve uma explicação clara. E isso levantou uma questão mais básica.
             </p>
             <p className="text-foreground font-medium">
-              Se posso escolher melhor, por que continuar a oferecer o mesmo de sempre?
+              Se é possível escolher melhor, por que continuar a oferecer o mesmo de sempre?
             </p>
             <p>
-              Foi assim que comecei a estudar alimentação e a perceber o impacto real que ela tem na saúde dos animais — não apenas a nível físico, mas também digestivo, inflamatório e geral.
+              Foi assim que começou um estudo sobre alimentação e sobre o impacto real que ela tem na saúde dos animais — não apenas a nível físico, mas também digestivo, inflamatório e geral.
             </p>
             <p>
-              Mas encontrei um obstáculo: fazer tudo de forma completa, com qualidade e dentro das exigências, é complexo e pouco acessível para a maioria das pessoas. Foi nesse momento que a Muzzle começou a ganhar forma.
+              Mas surgiu um obstáculo: fazer tudo de forma completa, com qualidade e dentro das exigências, é complexo e pouco acessível para a maioria das pessoas. Foi nesse momento que a Muzzle começou a ganhar forma.
             </p>
             <p>
-              Não como mais uma marca de alimentação dos focinhos, mas como uma abordagem mais simples e consciente. Decidimos focar no essencial.
+              Não como mais uma marca de alimentação dos focinhos, mas como uma abordagem mais simples e consciente, focada no essencial.
             </p>
             <p>
-              Criar algo prático, versátil e realmente útil no dia a dia — sem complicar a rotina dos tutores. Assim nasceram as nossas gomas de colagénio à base de caldo de ossos.
+              Algo prático, versátil e realmente útil no dia a dia — sem complicar a rotina dos tutores. Assim nasceram as nossas gomas de colagénio à base de caldo de ossos.
             </p>
             <p>
               Um alimento tradicional, conhecido há gerações, adaptado para o presente: fácil de servir, nutritivo e pensado para complementar a alimentação de forma natural.

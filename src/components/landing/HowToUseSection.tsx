@@ -16,7 +16,7 @@ const HowToUseSection = () => (
             <PawPrint className="w-7 h-7 text-accent" />
           </div>
           <h3 className="text-lg font-bold mb-2">Snack</h3>
-          <p className="text-muted-foreground text-sm">Gominha descongelada</p>
+          <p className="text-muted-foreground text-sm">Goma descongelada</p>
         </div>
         <div className="bg-card rounded-2xl p-8 text-center border border-border">
           <div className="w-14 h-14 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">

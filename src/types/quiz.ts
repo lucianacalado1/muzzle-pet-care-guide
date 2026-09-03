@@ -28,11 +28,11 @@ export const goalLabels: Record<string, string> = {
 };
 
 export const goalBenefits: Record<string, string> = {
-  none: "As gominhas Muzzle oferecem suplementação funcional completa com colágeno natural, beneficiando a saúde geral do seu pet.",
-  allergies: "O colágeno natural presente nas gominhas Muzzle auxilia na regeneração da pele e fortalecimento da barreira cutânea, reduzindo sensibilidades.",
+  none: "As gomas de caldo de ossos Muzzle oferecem colágeno natural completo, beneficiando a saúde geral do seu pet.",
+  allergies: "O colágeno natural presente nas gomas Muzzle auxilia na regeneração da pele e fortalecimento da barreira cutânea, reduzindo sensibilidades.",
   coat: "O colágeno hidrolisado fortalece os folículos e dá mais brilho e maciez à pelagem do seu pet.",
-  joints: "As gominhas contêm nutrientes que auxiliam na manutenção da saúde das articulações e cartilagens, proporcionando mais conforto.",
-  weight: "A suplementação funcional auxilia no metabolismo e na manutenção de uma composição corporal saudável.",
+  joints: "As gomas contêm nutrientes que auxiliam na manutenção da saúde das articulações e cartilagens, proporcionando mais conforto.",
+  weight: "As gomas de caldo de ossos auxiliam no metabolismo e na manutenção de uma composição corporal saudável.",
   mobility: "O colágeno natural contribui para a mobilidade e flexibilidade, especialmente em pets mais velhos ou de raças grandes.",
 };
 

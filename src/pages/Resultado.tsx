@@ -27,7 +27,7 @@ const Resultado = () => {
 
   const speciesLabel = data.species === "cat" ? "Gato" : "Cão";
   const whatsappMessage = encodeURIComponent(
-    `Olá! Acabei de fazer o teste no site da Muzzle.\n\nPet: ${data.petName}\nEspécie: ${speciesLabel}\nPeso: ${data.weight}kg\n\nDose recomendada: ${dose} gominhas por dia.\n\nGostaria de fazer o pedido.`
+    `Olá! Acabei de fazer o teste no site da Muzzle.\n\nPet: ${data.petName}\nEspécie: ${speciesLabel}\nPeso: ${data.weight}kg\n\nDose recomendada: ${dose} gomas por dia.\n\nGostaria de fazer o pedido.`
   );
 
   const whatsappUrl = `https://wa.me/351917191314?text=${whatsappMessage}`;
@@ -64,7 +64,7 @@ const Resultado = () => {
             <div className="bg-primary/10 rounded-2xl p-6 mb-8">
               <p className="text-sm font-semibold text-primary mb-1">Dose Recomendada</p>
               <p className="text-5xl font-extrabold text-primary">{dose}</p>
-              <p className="text-primary font-medium">gominhas por dia</p>
+              <p className="text-primary font-medium">gomas por dia</p>
             </div>
 
             {/* Benefícios esperados */}
