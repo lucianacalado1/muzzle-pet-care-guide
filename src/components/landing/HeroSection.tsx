@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { PawPrint } from "lucide-react";
-import productHero from "@/assets/product-hero.png";
+import heroComposicao from "@/assets/hero-composicao.jpeg";
 
 const HeroSection = () =>
 <section className="relative overflow-hidden pb-8 md:pb-12 bg-white">
@@ -46,9 +46,9 @@ const HeroSection = () =>
         {/* Image column — order-2 on mobile, natural on desktop */}
         <div className="order-2 flex justify-center md:flex-1">
           <img
-            src={productHero}
+            src={heroComposicao}
             alt="Muzzle Pet Food - Gomas naturais de caldo de ossos"
-            className="w-[300px] md:w-[600px] object-contain drop-shadow-2xl mix-blend-multiply"
+            className="w-[300px] md:w-[600px] object-contain"
           />
         </div>
 
