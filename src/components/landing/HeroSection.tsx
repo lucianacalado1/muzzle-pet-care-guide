@@ -5,10 +5,10 @@ import heroComposicao from "@/assets/hero-composicao.jpeg";
 const HeroSection = () =>
 <section className="relative overflow-hidden pb-8 md:pb-12 bg-white">
     <div className="container pt-2">
-      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10">
 
         {/* Text column — order-1 on mobile and desktop */}
-        <div className="order-1 flex-1 text-center md:text-left max-w-lg mx-auto md:mx-0">
+        <div className="order-1 flex-1 text-center md:text-left max-w-md mx-auto md:mx-0">
 
           <div className="flex flex-wrap items-center gap-3 mb-6 justify-center">
             <span className="inline-flex items-center gap-2 bg-accent/20 text-accent-foreground px-5 py-1.5 rounded-full text-sm font-semibold whitespace-nowrap">
@@ -48,7 +48,7 @@ const HeroSection = () =>
           <img
             src={heroComposicao}
             alt="Muzzle Pet Food - Gomas naturais de caldo de ossos"
-            className="w-[300px] md:w-[600px] object-contain"
+            className="w-full max-w-[560px] object-contain"
           />
         </div>
 
