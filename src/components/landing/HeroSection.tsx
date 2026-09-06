@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { PawPrint } from "lucide-react";
-import heroComposicao from "@/assets/hero-composicao.jpeg";
+import heroComposicao from "@/assets/hero-composicao-cortada.jpeg";
 
 const HeroSection = () =>
 <section className="relative overflow-hidden pb-8 md:pb-12 bg-white">
