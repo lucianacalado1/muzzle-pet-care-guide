@@ -1,5 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
-import productHero from "@/assets/product-hero.png";
+import cardIndividual from "@/assets/card-individual-cortado.jpeg";
+import cardEconomico from "@/assets/card-economico-cortado.jpeg";
 
 const products = [
   {
@@ -9,7 +10,7 @@ const products = [
     badge: "Mais popular",
     badgeClass: "bg-accent text-accent-foreground",
     highlight: false,
-    image: productHero,
+    image: cardIndividual,
     whatsappUrl:
       "https://wa.me/351917191314?text=Olá!%20Gostaria%20de%20encomendar%20a%20Embalagem%20Individual%20das%20gomas%20Muzzle%20(5,90€).",
   },
@@ -21,7 +22,7 @@ const products = [
     badge: "NOVIDADE",
     badgeClass: "bg-primary text-primary-foreground",
     highlight: true,
-    image: "/produto-economico.jpg",
+    image: cardEconomico,
     whatsappUrl:
       "https://wa.me/351917191314?text=Olá!%20Gostaria%20de%20encomendar%20o%20Formato%20Económico%20474g%20das%20gomas%20Muzzle%20(14,20€).",
   },
@@ -54,11 +55,7 @@ const ProductsSection = () => (
               <img
                 src={product.image}
                 alt={product.name}
-                className={
-                  product.name === "Embalagem Individual"
-                    ? "h-full w-auto object-contain scale-125"
-                    : "h-full w-auto object-contain"
-                }
+                className="h-full w-auto object-contain"
               />
             </div>
 
